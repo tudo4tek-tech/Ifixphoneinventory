@@ -1,0 +1,87 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  directUrl  = env("DIRECT_URL")
+  extensions = [unaccent]
+}
+
+model Brand {
+  id    String  @id @default(cuid())
+  name  String  @unique
+  slug  String  @unique
+  lines DeviceLine[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model DeviceLine {
+  id      String @id @default(cuid())
+  name    String
+  slug    String
+  brandId String
+  brand   Brand  @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  models  Model[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([brandId, slug])
+}
+
+model Model {
+  id           String     @id @default(cuid())
+  name         String
+  slug         String
+  sourceUrl    String?
+  deviceLineId String
+  deviceLine   DeviceLine @relation(fields: [deviceLineId], references: [id], onDelete: Cascade)
+  categories   PartCategory[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([deviceLineId, slug])
+}
+
+model PartCategory {
+  id      String @id @default(cuid())
+  name    String
+  order   Int    @default(0)
+  modelId String
+  model   Model  @relation(fields: [modelId], references: [id], onDelete: Cascade)
+  items   InventoryItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([modelId, name])
+}
+
+model InventoryItem {
+  id                String  @id @default(cuid())
+  name              String
+  reference         String?
+  sourceProductId   String?
+  sourceUrl         String?
+  referencePriceEur Float?
+  costPrice         Float?
+  sellPrice         Float?
+  quantity          Int     @default(0)
+  lowStockThreshold Int     @default(2)
+  supplier          String?
+  notes             String?
+
+  partCategoryId String
+  partCategory   PartCategory @relation(fields: [partCategoryId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([partCategoryId])
+}
