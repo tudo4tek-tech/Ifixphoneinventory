@@ -8780,5 +8780,1291 @@
         }
       ]
     }
+  },
+  "Oppo": {
+    "Serie A": {
+      "id": "837",
+      "url": "https://kaquucomponentes.com/837-serie-a",
+      "models": [
+        {
+          "id": "5528",
+          "name": "A98 5G (CPH2529)",
+          "url": "https://kaquucomponentes.com/5528-a98-5g-cph2529",
+          "part_types": []
+        },
+        {
+          "id": "5022",
+          "name": "A96 5G (PFUM10 PHA120)",
+          "url": "https://kaquucomponentes.com/5022-a96-5g-pfum10-pha120",
+          "part_types": []
+        },
+        {
+          "id": "5002",
+          "name": "A96 4G (CPH2333)",
+          "url": "https://kaquucomponentes.com/5002-a96-4g-cph2333",
+          "part_types": []
+        },
+        {
+          "id": "4509",
+          "name": "A95 5G (PELM00)",
+          "url": "https://kaquucomponentes.com/4509-a95-5g-pelm00",
+          "part_types": []
+        },
+        {
+          "id": "5200",
+          "name": "A95 4G (CHP2365)",
+          "url": "https://kaquucomponentes.com/5200-a95-4g-chp2365",
+          "part_types": []
+        },
+        {
+          "id": "4792",
+          "name": "A94 (CPH2203)",
+          "url": "https://kaquucomponentes.com/4792-a94-cph2203",
+          "part_types": []
+        },
+        {
+          "id": "1367",
+          "name": "A94 5G (CPH2211)",
+          "url": "https://kaquucomponentes.com/1367-a94-5g-cph2211",
+          "part_types": []
+        },
+        {
+          "id": "4658",
+          "name": "A93s 5G (PFGM00)",
+          "url": "https://kaquucomponentes.com/4658-a93s-5g-pfgm00",
+          "part_types": []
+        },
+        {
+          "id": "4552",
+          "name": "A93 5G (PEHM00)",
+          "url": "https://kaquucomponentes.com/4552-a93-5g-pehm00",
+          "part_types": []
+        },
+        {
+          "id": "4796",
+          "name": "A93 (CPH2121)",
+          "url": "https://kaquucomponentes.com/4796-a93-cph2121",
+          "part_types": []
+        },
+        {
+          "id": "4942",
+          "name": "A92s (PDKM00)",
+          "url": "https://kaquucomponentes.com/4942-a92s-pdkm00",
+          "part_types": []
+        },
+        {
+          "id": "915",
+          "name": "A92 (CPH2059)",
+          "url": "https://kaquucomponentes.com/915-a92-cph2059",
+          "part_types": []
+        },
+        {
+          "id": "852",
+          "name": "A91 (PCPM00)",
+          "url": "https://kaquucomponentes.com/852-a91-pcpm00",
+          "part_types": []
+        },
+        {
+          "id": "4646",
+          "name": "A83 (CPH1729)",
+          "url": "https://kaquucomponentes.com/4646-a83-cph1729",
+          "part_types": []
+        },
+        {
+          "id": "6004",
+          "name": "A80 (CPH2639)",
+          "url": "https://kaquucomponentes.com/6004-a80-cph2639",
+          "part_types": []
+        },
+        {
+          "id": "5527",
+          "name": "A79 5G (CPH2557)",
+          "url": "https://kaquucomponentes.com/5527-a79-5g-cph2557",
+          "part_types": []
+        },
+        {
+          "id": "5217",
+          "name": "A78 5G (CPH2483)",
+          "url": "https://kaquucomponentes.com/5217-a78-5g-cph2483",
+          "part_types": []
+        },
+        {
+          "id": "5960",
+          "name": "A78 4G (CPH2565)",
+          "url": "https://kaquucomponentes.com/5960-a78-4g-cph2565",
+          "part_types": []
+        },
+        {
+          "id": "4623",
+          "name": "A77 5G (CPH2339)",
+          "url": "https://kaquucomponentes.com/4623-a77-5g-cph2339",
+          "part_types": []
+        },
+        {
+          "id": "4622",
+          "name": "A77 4G (CPH2385)",
+          "url": "https://kaquucomponentes.com/4622-a77-4g-cph2385",
+          "part_types": []
+        },
+        {
+          "id": "4652",
+          "name": "A76 (CPH2375)",
+          "url": "https://kaquucomponentes.com/4652-a76-cph2375",
+          "part_types": []
+        },
+        {
+          "id": "1215",
+          "name": "A74 5G (CPH2197)",
+          "url": "https://kaquucomponentes.com/1215-a74-5g-cph2197",
+          "part_types": []
+        },
+        {
+          "id": "1253",
+          "name": "A74 4G (CPH2219)",
+          "url": "https://kaquucomponentes.com/1253-a74-4g-cph2219",
+          "part_types": []
+        },
+        {
+          "id": "4562",
+          "name": "A73 5G (CPH2161)",
+          "url": "https://kaquucomponentes.com/4562-a73-5g-cph2161",
+          "part_types": []
+        },
+        {
+          "id": "4563",
+          "name": "A73 4G 2020 (CPH2099)",
+          "url": "https://kaquucomponentes.com/4563-a73-4g-2020-cph2099",
+          "part_types": []
+        },
+        {
+          "id": "911",
+          "name": "A73 2017",
+          "url": "https://kaquucomponentes.com/911-a73-2017",
+          "part_types": []
+        },
+        {
+          "id": "4880",
+          "name": "A72N 5G (PDYM10)",
+          "url": "https://kaquucomponentes.com/4880-a72n-5g-pdym10",
+          "part_types": []
+        },
+        {
+          "id": "1038",
+          "name": "A72 5G (PDYM20)",
+          "url": "https://kaquucomponentes.com/1038-a72-5g-pdym20",
+          "part_types": []
+        },
+        {
+          "id": "914",
+          "name": "A72 (CPH2067)",
+          "url": "https://kaquucomponentes.com/914-a72-cph2067",
+          "part_types": []
+        },
+        {
+          "id": "4645",
+          "name": "A71 (CPH1717)",
+          "url": "https://kaquucomponentes.com/4645-a71-cph1717",
+          "part_types": []
+        },
+        {
+          "id": "5871",
+          "name": "A60 (CPH2631)",
+          "url": "https://kaquucomponentes.com/5871-a60-cph2631",
+          "part_types": []
+        },
+        {
+          "id": "5219",
+          "name": "A58 5G (PHJ110)",
+          "url": "https://kaquucomponentes.com/5219-a58-5g-phj110",
+          "part_types": []
+        },
+        {
+          "id": "5421",
+          "name": "A58 4G (CPH2577)",
+          "url": "https://kaquucomponentes.com/5421-a58-4g-cph2577",
+          "part_types": []
+        },
+        {
+          "id": "5258",
+          "name": "A57S  (CPH2385)",
+          "url": "https://kaquucomponentes.com/5258-a57s-cph2385",
+          "part_types": []
+        },
+        {
+          "id": "4620",
+          "name": "A57 5G (PFTM20)",
+          "url": "https://kaquucomponentes.com/4620-a57-5g-pftm20",
+          "part_types": []
+        },
+        {
+          "id": "4619",
+          "name": "A57 4G (CPH2387)",
+          "url": "https://kaquucomponentes.com/4619-a57-4g-cph2387",
+          "part_types": []
+        },
+        {
+          "id": "4618",
+          "name": "A57 (CPH1701)",
+          "url": "https://kaquucomponentes.com/4618-a57-cph1701",
+          "part_types": []
+        },
+        {
+          "id": "4601",
+          "name": "A56 5G (PFVM10)",
+          "url": "https://kaquucomponentes.com/4601-a56-5g-pfvm10",
+          "part_types": []
+        },
+        {
+          "id": "4708",
+          "name": "A55s (CPH2309)",
+          "url": "https://kaquucomponentes.com/4708-a55s-cph2309",
+          "part_types": []
+        },
+        {
+          "id": "4549",
+          "name": "A55 5G (PEMM00)",
+          "url": "https://kaquucomponentes.com/4549-a55-5g-pemm00",
+          "part_types": []
+        },
+        {
+          "id": "4551",
+          "name": "A55 4G (CPH2325)",
+          "url": "https://kaquucomponentes.com/4551-a55-4g-cph2325",
+          "part_types": []
+        },
+        {
+          "id": "1391",
+          "name": "A54s (CPH2273)",
+          "url": "https://kaquucomponentes.com/1391-a54s-cph2273",
+          "part_types": []
+        },
+        {
+          "id": "1218",
+          "name": "A54 5G (CPH2195)",
+          "url": "https://kaquucomponentes.com/1218-a54-5g-cph2195",
+          "part_types": []
+        },
+        {
+          "id": "4785",
+          "name": "A54 (CPH2239)",
+          "url": "https://kaquucomponentes.com/4785-a54-cph2239",
+          "part_types": []
+        },
+        {
+          "id": "1039",
+          "name": "A53s (CPH2135)",
+          "url": "https://kaquucomponentes.com/1039-a53s-cph2135",
+          "part_types": []
+        },
+        {
+          "id": "4636",
+          "name": "A53 5G (PECM30)",
+          "url": "https://kaquucomponentes.com/4636-a53-5g-pecm30",
+          "part_types": []
+        },
+        {
+          "id": "922",
+          "name": "A53 (CPH2127, CPH2131)",
+          "url": "https://kaquucomponentes.com/922-a53-cph2127-cph2131",
+          "part_types": []
+        },
+        {
+          "id": "4479",
+          "name": "A53 2020 (CPH2127)",
+          "url": "https://kaquucomponentes.com/4479-a53-2020-cph2127",
+          "part_types": []
+        },
+        {
+          "id": "856",
+          "name": "A52 (PDAM10)",
+          "url": "https://kaquucomponentes.com/856-a52-pdam10",
+          "part_types": []
+        },
+        {
+          "id": "6006",
+          "name": "A40m (CPH3669)",
+          "url": "https://kaquucomponentes.com/6006-a40m-cph3669",
+          "part_types": []
+        },
+        {
+          "id": "6005",
+          "name": "A40 (CPH2669)",
+          "url": "https://kaquucomponentes.com/6005-a40-cph2669",
+          "part_types": []
+        },
+        {
+          "id": "6031",
+          "name": "A38 (CPH2579)",
+          "url": "https://kaquucomponentes.com/6031-a38-cph2579",
+          "part_types": []
+        },
+        {
+          "id": "4653",
+          "name": "A36 (PESM10)",
+          "url": "https://kaquucomponentes.com/4653-a36-pesm10",
+          "part_types": []
+        },
+        {
+          "id": "4505",
+          "name": "A35 (PEFM00)",
+          "url": "https://kaquucomponentes.com/4505-a35-pefm00",
+          "part_types": []
+        },
+        {
+          "id": "4861",
+          "name": "A33 2020 (CPH2137)",
+          "url": "https://kaquucomponentes.com/4861-a33-2020-cph2137",
+          "part_types": []
+        },
+        {
+          "id": "4624",
+          "name": "A33 2015",
+          "url": "https://kaquucomponentes.com/4624-a33-2015",
+          "part_types": []
+        },
+        {
+          "id": "4787",
+          "name": "A32 (PDVM00)",
+          "url": "https://kaquucomponentes.com/4787-a32-pdvm00",
+          "part_types": []
+        },
+        {
+          "id": "1344",
+          "name": "A31 2020 (CPH2015)",
+          "url": "https://kaquucomponentes.com/1344-a31-2020-cph2015",
+          "part_types": []
+        },
+        {
+          "id": "6030",
+          "name": "A18 (CPH2591)",
+          "url": "https://kaquucomponentes.com/6030-a18-cph2591",
+          "part_types": []
+        },
+        {
+          "id": "5828",
+          "name": "A17K (CPH2471)",
+          "url": "https://kaquucomponentes.com/5828-a17k-cph2471",
+          "part_types": []
+        },
+        {
+          "id": "5218",
+          "name": "A17 (CPH2477)",
+          "url": "https://kaquucomponentes.com/5218-a17-cph2477",
+          "part_types": []
+        },
+        {
+          "id": "1382",
+          "name": "A16s (CPH2271)",
+          "url": "https://kaquucomponentes.com/1382-a16s-cph2271",
+          "part_types": []
+        },
+        {
+          "id": "1383",
+          "name": "A16 (CPH2269)",
+          "url": "https://kaquucomponentes.com/1383-a16-cph2269",
+          "part_types": []
+        },
+        {
+          "id": "4506",
+          "name": "A15s (CPH2179)",
+          "url": "https://kaquucomponentes.com/4506-a15s-cph2179",
+          "part_types": []
+        },
+        {
+          "id": "1267",
+          "name": "A15 (CPH2185 )",
+          "url": "https://kaquucomponentes.com/1267-a15-cph2185-",
+          "part_types": []
+        },
+        {
+          "id": "1205",
+          "name": "A12S",
+          "url": "https://kaquucomponentes.com/1205-a12s",
+          "part_types": []
+        },
+        {
+          "id": "4844",
+          "name": "A12e (CPH1853)",
+          "url": "https://kaquucomponentes.com/4844-a12e-cph1853",
+          "part_types": []
+        },
+        {
+          "id": "1204",
+          "name": "A12 (CPH2077)",
+          "url": "https://kaquucomponentes.com/1204-a12-cph2077",
+          "part_types": []
+        },
+        {
+          "id": "876",
+          "name": "A11X (PCHM30)",
+          "url": "https://kaquucomponentes.com/876-a11x-pchm30",
+          "part_types": []
+        },
+        {
+          "id": "5875",
+          "name": "A11s",
+          "url": "https://kaquucomponentes.com/5875-a11s",
+          "part_types": []
+        },
+        {
+          "id": "4782",
+          "name": "A11 (PCHM10, PCHT10)",
+          "url": "https://kaquucomponentes.com/4782-a11-pchm10-pcht10",
+          "part_types": []
+        },
+        {
+          "id": "4885",
+          "name": "A9x (PCEM00)",
+          "url": "https://kaquucomponentes.com/4885-a9x-pcem00",
+          "part_types": []
+        },
+        {
+          "id": "877",
+          "name": "A9 2020 (CPH1937)",
+          "url": "https://kaquucomponentes.com/877-a9-2020-cph1937",
+          "part_types": []
+        },
+        {
+          "id": "838",
+          "name": "A9 (PCAM10)",
+          "url": "https://kaquucomponentes.com/838-a9-pcam10",
+          "part_types": []
+        },
+        {
+          "id": "4845",
+          "name": "A8 (PDBM00)",
+          "url": "https://kaquucomponentes.com/4845-a8-pdbm00",
+          "part_types": []
+        },
+        {
+          "id": "1256",
+          "name": "A7X (PBBM00, PBBT00)",
+          "url": "https://kaquucomponentes.com/1256-a7x-pbbm00-pbbt00",
+          "part_types": []
+        },
+        {
+          "id": "1231",
+          "name": "A7 / AX7 (CPH1901)",
+          "url": "https://kaquucomponentes.com/1231-a7-ax7-cph1901",
+          "part_types": []
+        },
+        {
+          "id": "7020",
+          "name": "A6x (CPH2783)",
+          "url": "https://kaquucomponentes.com/7020-a6x-cph2783",
+          "part_types": []
+        },
+        {
+          "id": "6638",
+          "name": "A6x 4G (CPH2819)",
+          "url": "https://kaquucomponentes.com/6638-a6x-4g-cph2819",
+          "part_types": []
+        },
+        {
+          "id": "7021",
+          "name": "A6t (CPH2853)",
+          "url": "https://kaquucomponentes.com/7021-a6t-cph2853",
+          "part_types": []
+        },
+        {
+          "id": "6644",
+          "name": "A6t 4G (CPH2847)",
+          "url": "https://kaquucomponentes.com/6644-a6t-4g-cph2847",
+          "part_types": []
+        },
+        {
+          "id": "7014",
+          "name": "A6K (CPH2891)",
+          "url": "https://kaquucomponentes.com/7014-a6k-cph2891",
+          "part_types": []
+        },
+        {
+          "id": "6645",
+          "name": "A6c (PMC110)",
+          "url": "https://kaquucomponentes.com/6645-a6c-pmc110",
+          "part_types": []
+        },
+        {
+          "id": "6711",
+          "name": "A6 Pro 5G (CPH2781)",
+          "url": "https://kaquucomponentes.com/6711-a6-pro-5g-cph2781",
+          "part_types": []
+        },
+        {
+          "id": "6637",
+          "name": "A6 5G (CPH2831)",
+          "url": "https://kaquucomponentes.com/6637-a6-5g-cph2831",
+          "part_types": []
+        },
+        {
+          "id": "6636",
+          "name": "A6 4G (CPH2817)",
+          "url": "https://kaquucomponentes.com/6636-a6-4g-cph2817",
+          "part_types": []
+        },
+        {
+          "id": "7017",
+          "name": "A5x 5G",
+          "url": "https://kaquucomponentes.com/7017-a5x-5g",
+          "part_types": []
+        },
+        {
+          "id": "1232",
+          "name": "A5s AX5s (CPH1909, CPH1920, CPH1912)",
+          "url": "https://kaquucomponentes.com/1232-a5s-ax5s-cph1909-cph1920-cph1912",
+          "part_types": []
+        },
+        {
+          "id": "6206",
+          "name": "A5 Pro 5G (CPH2695)",
+          "url": "https://kaquucomponentes.com/6206-a5-pro-5g-cph2695",
+          "part_types": []
+        },
+        {
+          "id": "6585",
+          "name": "A5 Pro 4G (CPH2711)",
+          "url": "https://kaquucomponentes.com/6585-a5-pro-4g-cph2711",
+          "part_types": []
+        },
+        {
+          "id": "6635",
+          "name": "A5 5G 2025 (CPH2735)",
+          "url": "https://kaquucomponentes.com/6635-a5-5g-2025-cph2735",
+          "part_types": []
+        },
+        {
+          "id": "6634",
+          "name": "A5 4G 2025 (CPH2727)",
+          "url": "https://kaquucomponentes.com/6634-a5-4g-2025-cph2727",
+          "part_types": []
+        },
+        {
+          "id": "875",
+          "name": "A5 2020 (CPH1931)",
+          "url": "https://kaquucomponentes.com/875-a5-2020-cph1931",
+          "part_types": []
+        },
+        {
+          "id": "1311",
+          "name": "A5 (PADM00)",
+          "url": "https://kaquucomponentes.com/1311-a5-padm00",
+          "part_types": []
+        },
+        {
+          "id": "6646",
+          "name": "A3 Pro (CPH2665)",
+          "url": "https://kaquucomponentes.com/6646-a3-pro-cph2665",
+          "part_types": []
+        },
+        {
+          "id": "6003",
+          "name": "A3x 4G (CPH2641)",
+          "url": "https://kaquucomponentes.com/6003-a3x-4g-cph2641",
+          "part_types": []
+        },
+        {
+          "id": "6002",
+          "name": "A3x (CPH2681)",
+          "url": "https://kaquucomponentes.com/6002-a3x-cph2681",
+          "part_types": []
+        },
+        {
+          "id": "4843",
+          "name": "A3s (CPH1803, CPH1853, CPH1805)",
+          "url": "https://kaquucomponentes.com/4843-a3s-cph1803-cph1853-cph1805",
+          "part_types": []
+        },
+        {
+          "id": "6168",
+          "name": "A3 5G 2024  (CPH2683)",
+          "url": "https://kaquucomponentes.com/6168-a3-5g-2024-cph2683",
+          "part_types": []
+        },
+        {
+          "id": "6169",
+          "name": "A3 4G 2024 (CPH2669)",
+          "url": "https://kaquucomponentes.com/6169-a3-4g-2024-cph2669",
+          "part_types": []
+        },
+        {
+          "id": "850",
+          "name": "A3 2018 (PADT00)",
+          "url": "https://kaquucomponentes.com/850-a3-2018-padt00",
+          "part_types": []
+        },
+        {
+          "id": "5829",
+          "name": "A2 (PJB110)",
+          "url": "https://kaquucomponentes.com/5829-a2-pjb110",
+          "part_types": []
+        },
+        {
+          "id": "4783",
+          "name": "A1k (CPH1923)",
+          "url": "https://kaquucomponentes.com/4783-a1k-cph1923",
+          "part_types": []
+        },
+        {
+          "id": "5995",
+          "name": "A1 (PHS110)",
+          "url": "https://kaquucomponentes.com/5995-a1-phs110",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie F": {
+      "id": "5284",
+      "url": "https://kaquucomponentes.com/5284-serie-f",
+      "models": [
+        {
+          "id": "5812",
+          "name": "F25 Pro",
+          "url": "https://kaquucomponentes.com/5812-f25-pro",
+          "part_types": []
+        },
+        {
+          "id": "5813",
+          "name": "F21 Pro 5G (CPH2341)",
+          "url": "https://kaquucomponentes.com/5813-f21-pro-5g-cph2341",
+          "part_types": []
+        },
+        {
+          "id": "4629",
+          "name": "F21 Pro 4G (CPH2363)",
+          "url": "https://kaquucomponentes.com/4629-f21-pro-4g-cph2363",
+          "part_types": []
+        },
+        {
+          "id": "4907",
+          "name": "F19 Pro+ 5G (CPH2213)",
+          "url": "https://kaquucomponentes.com/4907-f19-pro-5g-cph2213",
+          "part_types": []
+        },
+        {
+          "id": "4510",
+          "name": "F19 Pro (CPH2285)",
+          "url": "https://kaquucomponentes.com/4510-f19-pro-cph2285",
+          "part_types": []
+        },
+        {
+          "id": "6059",
+          "name": "Oppo F19s (CPH2219)",
+          "url": "https://kaquucomponentes.com/6059-oppo-f19s-cph2219",
+          "part_types": []
+        },
+        {
+          "id": "6060",
+          "name": "Oppo F19 (CHP2219)",
+          "url": "https://kaquucomponentes.com/6060-oppo-f19-chp2219",
+          "part_types": []
+        },
+        {
+          "id": "4999",
+          "name": "F17 Pro (CPH2119)",
+          "url": "https://kaquucomponentes.com/4999-f17-pro-cph2119",
+          "part_types": []
+        },
+        {
+          "id": "4560",
+          "name": "F17 (CPH2095)",
+          "url": "https://kaquucomponentes.com/4560-f17-cph2095",
+          "part_types": []
+        },
+        {
+          "id": "4559",
+          "name": "F15 (CPH2001)",
+          "url": "https://kaquucomponentes.com/4559-f15-cph2001",
+          "part_types": []
+        },
+        {
+          "id": "4819",
+          "name": "F11 Pro (CPH1969)",
+          "url": "https://kaquucomponentes.com/4819-f11-pro-cph1969",
+          "part_types": []
+        },
+        {
+          "id": "860",
+          "name": "F11 (CPH1911)",
+          "url": "https://kaquucomponentes.com/860-f11-cph1911",
+          "part_types": []
+        },
+        {
+          "id": "4850",
+          "name": "F9 Pro (CPH1828)",
+          "url": "https://kaquucomponentes.com/4850-f9-pro-cph1828",
+          "part_types": []
+        },
+        {
+          "id": "1275",
+          "name": "F9 (CPH1823)",
+          "url": "https://kaquucomponentes.com/1275-f9-cph1823",
+          "part_types": []
+        },
+        {
+          "id": "4831",
+          "name": "F7 (CPH1819)",
+          "url": "https://kaquucomponentes.com/4831-f7-cph1819",
+          "part_types": []
+        },
+        {
+          "id": "4621",
+          "name": "F3 Lite",
+          "url": "https://kaquucomponentes.com/4621-f3-lite",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Find": {
+      "id": "5285",
+      "url": "https://kaquucomponentes.com/5285-serie-find",
+      "models": [
+        {
+          "id": "6633",
+          "name": "Find X9 Pro (CPH2791)",
+          "url": "https://kaquucomponentes.com/6633-find-x9-pro-cph2791",
+          "part_types": []
+        },
+        {
+          "id": "6632",
+          "name": "Find X9 (CPH2797)",
+          "url": "https://kaquucomponentes.com/6632-find-x9-cph2797",
+          "part_types": []
+        },
+        {
+          "id": "5955",
+          "name": "Find X8 Pro (CPH2659)",
+          "url": "https://kaquucomponentes.com/5955-find-x8-pro-cph2659",
+          "part_types": []
+        },
+        {
+          "id": "5966",
+          "name": "Find X8 (CPH2651)",
+          "url": "https://kaquucomponentes.com/5966-find-x8-cph2651",
+          "part_types": []
+        },
+        {
+          "id": "5967",
+          "name": "Find X6 Pro (PGEM110)",
+          "url": "https://kaquucomponentes.com/5967-find-x6-pro-pgem110",
+          "part_types": []
+        },
+        {
+          "id": "4634",
+          "name": "Find X5 Pro (CPH2305)",
+          "url": "https://kaquucomponentes.com/4634-find-x5-pro-cph2305",
+          "part_types": []
+        },
+        {
+          "id": "4630",
+          "name": "Find X5 Lite (CPH2371)",
+          "url": "https://kaquucomponentes.com/4630-find-x5-lite-cph2371",
+          "part_types": []
+        },
+        {
+          "id": "4626",
+          "name": "Find X5 (CPH2307)",
+          "url": "https://kaquucomponentes.com/4626-find-x5-cph2307",
+          "part_types": []
+        },
+        {
+          "id": "1467",
+          "name": "Find X3 Pro (CPH2173, PEEM00)",
+          "url": "https://kaquucomponentes.com/1467-find-x3-pro-cph2173-peem00",
+          "part_types": []
+        },
+        {
+          "id": "1466",
+          "name": "Find X3 Neo (CPH2207)",
+          "url": "https://kaquucomponentes.com/1466-find-x3-neo-cph2207",
+          "part_types": []
+        },
+        {
+          "id": "4840",
+          "name": "Find X3 Lite (CPH2145)",
+          "url": "https://kaquucomponentes.com/4840-find-x3-lite-cph2145",
+          "part_types": []
+        },
+        {
+          "id": "4550",
+          "name": "Find X3 (PEDM00)",
+          "url": "https://kaquucomponentes.com/4550-find-x3-pedm00",
+          "part_types": []
+        },
+        {
+          "id": "1212",
+          "name": "Find X2 Pro (CPH2025)",
+          "url": "https://kaquucomponentes.com/1212-find-x2-pro-cph2025",
+          "part_types": []
+        },
+        {
+          "id": "937",
+          "name": "Find X2 Lite (CPH2005)",
+          "url": "https://kaquucomponentes.com/937-find-x2-lite-cph2005",
+          "part_types": []
+        },
+        {
+          "id": "1213",
+          "name": "Find X2 Neo (CPH2009)",
+          "url": "https://kaquucomponentes.com/1213-find-x2-neo-cph2009",
+          "part_types": []
+        },
+        {
+          "id": "1211",
+          "name": "Find X2 (CPH2023)",
+          "url": "https://kaquucomponentes.com/1211-find-x2-cph2023",
+          "part_types": []
+        },
+        {
+          "id": "5744",
+          "name": "Find N2 Flip (CPH2437)",
+          "url": "https://kaquucomponentes.com/5744-find-n2-flip-cph2437",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie K": {
+      "id": "5286",
+      "url": "https://kaquucomponentes.com/5286-serie-k",
+      "models": [
+        {
+          "id": "4637",
+          "name": "K7x (PERM00)",
+          "url": "https://kaquucomponentes.com/4637-k7x-perm00",
+          "part_types": []
+        },
+        {
+          "id": "4561",
+          "name": "K7 (PCLM50)",
+          "url": "https://kaquucomponentes.com/4561-k7-pclm50",
+          "part_types": []
+        },
+        {
+          "id": "4609",
+          "name": "K5 (PCNM00)",
+          "url": "https://kaquucomponentes.com/4609-k5-pcnm00",
+          "part_types": []
+        },
+        {
+          "id": "4565",
+          "name": "K3 (PCGM00)",
+          "url": "https://kaquucomponentes.com/4565-k3-pcgm00",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie R": {
+      "id": "5287",
+      "url": "https://kaquucomponentes.com/5287-serie-r",
+      "models": [
+        {
+          "id": "1314",
+          "name": "R17 (CPH1879, PBEM00)",
+          "url": "https://kaquucomponentes.com/1314-r17-cph1879-pbem00",
+          "part_types": []
+        },
+        {
+          "id": "1315",
+          "name": "R17 Neo (CPH1893)",
+          "url": "https://kaquucomponentes.com/1315-r17-neo-cph1893",
+          "part_types": []
+        },
+        {
+          "id": "909",
+          "name": "RX17 Neo (CPH1893)",
+          "url": "https://kaquucomponentes.com/909-rx17-neo-cph1893",
+          "part_types": []
+        },
+        {
+          "id": "4786",
+          "name": "R17 Pro",
+          "url": "https://kaquucomponentes.com/4786-r17-pro",
+          "part_types": []
+        },
+        {
+          "id": "910",
+          "name": "RX17 Pro (CPH1877, PBDM00)",
+          "url": "https://kaquucomponentes.com/910-rx17-pro-cph1877-pbdm00",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Reno": {
+      "id": "5288",
+      "url": "https://kaquucomponentes.com/5288-serie-reno",
+      "models": [
+        {
+          "id": "6641",
+          "name": "Reno15 F (CPH2801)",
+          "url": "https://kaquucomponentes.com/6641-reno15-f-cph2801",
+          "part_types": []
+        },
+        {
+          "id": "6640",
+          "name": "Reno15 Pro / Mini (CPH2813)",
+          "url": "https://kaquucomponentes.com/6640-reno15-pro-mini-cph2813",
+          "part_types": []
+        },
+        {
+          "id": "6639",
+          "name": "Reno15 (CPH2825)",
+          "url": "https://kaquucomponentes.com/6639-reno15-cph2825",
+          "part_types": []
+        },
+        {
+          "id": "6517",
+          "name": "Reno14 Pro (CPH2739)",
+          "url": "https://kaquucomponentes.com/6517-reno14-pro-cph2739",
+          "part_types": []
+        },
+        {
+          "id": "6586",
+          "name": "Reno14 FS 5G",
+          "url": "https://kaquucomponentes.com/6586-reno14-fs-5g",
+          "part_types": []
+        },
+        {
+          "id": "6587",
+          "name": "Reno14 F",
+          "url": "https://kaquucomponentes.com/6587-reno14-f",
+          "part_types": []
+        },
+        {
+          "id": "6516",
+          "name": "Reno14 (CPH2737)",
+          "url": "https://kaquucomponentes.com/6516-reno14-cph2737",
+          "part_types": []
+        },
+        {
+          "id": "4586",
+          "name": "Reno Z (PCDM10)",
+          "url": "https://kaquucomponentes.com/4586-reno-z-pcdm10",
+          "part_types": []
+        },
+        {
+          "id": "6643",
+          "name": "Reno13 FS 5G",
+          "url": "https://kaquucomponentes.com/6643-reno13-fs-5g",
+          "part_types": []
+        },
+        {
+          "id": "6202",
+          "name": "Reno13F 5G (CPH2699)",
+          "url": "https://kaquucomponentes.com/6202-reno13f-5g-cph2699",
+          "part_types": []
+        },
+        {
+          "id": "6203",
+          "name": "Reno13F 4G (CPH2701)",
+          "url": "https://kaquucomponentes.com/6203-reno13f-4g-cph2701",
+          "part_types": []
+        },
+        {
+          "id": "5963",
+          "name": "Reno13 Pro (CPH2697)",
+          "url": "https://kaquucomponentes.com/5963-reno13-pro-cph2697",
+          "part_types": []
+        },
+        {
+          "id": "5962",
+          "name": "Reno13 (CPH2689)",
+          "url": "https://kaquucomponentes.com/5962-reno13-cph2689",
+          "part_types": []
+        },
+        {
+          "id": "5693",
+          "name": "Reno12 Pro 5G (CPH2629)",
+          "url": "https://kaquucomponentes.com/5693-reno12-pro-5g-cph2629",
+          "part_types": []
+        },
+        {
+          "id": "5953",
+          "name": "Reno12 Pro 5G (PJW110)",
+          "url": "https://kaquucomponentes.com/5953-reno12-pro-5g-pjw110",
+          "part_types": []
+        },
+        {
+          "id": "5802",
+          "name": "Reno12F 4G/5G (CPH2687 CPH2637)",
+          "url": "https://kaquucomponentes.com/5802-reno12f-4g5g-cph2687-cph2637",
+          "part_types": []
+        },
+        {
+          "id": "5701",
+          "name": "Reno12 5G (CPH2625)",
+          "url": "https://kaquucomponentes.com/5701-reno12-5g-cph2625",
+          "part_types": []
+        },
+        {
+          "id": "5478",
+          "name": "Reno11F (CPH2603)",
+          "url": "https://kaquucomponentes.com/5478-reno11f-cph2603",
+          "part_types": []
+        },
+        {
+          "id": "5476",
+          "name": "Reno11 China (PJH110)",
+          "url": "https://kaquucomponentes.com/5476-reno11-china-pjh110",
+          "part_types": []
+        },
+        {
+          "id": "5477",
+          "name": "Reno11 (CPH2599)",
+          "url": "https://kaquucomponentes.com/5477-reno11-cph2599",
+          "part_types": []
+        },
+        {
+          "id": "1370",
+          "name": "Reno10X Zoom (CPH1919)",
+          "url": "https://kaquucomponentes.com/1370-reno10x-zoom-cph1919",
+          "part_types": []
+        },
+        {
+          "id": "5810",
+          "name": "Reno10 Pro (CPH2525)",
+          "url": "https://kaquucomponentes.com/5810-reno10-pro-cph2525",
+          "part_types": []
+        },
+        {
+          "id": "5686",
+          "name": "Reno10 5G (CPH2531)",
+          "url": "https://kaquucomponentes.com/5686-reno10-5g-cph2531",
+          "part_types": []
+        },
+        {
+          "id": "4661",
+          "name": "Reno8 Pro Plus (PFZM10)",
+          "url": "https://kaquucomponentes.com/4661-reno8-pro-plus-pfzm10",
+          "part_types": []
+        },
+        {
+          "id": "5805",
+          "name": "Reno8 Pro (CPH2357)",
+          "url": "https://kaquucomponentes.com/5805-reno8-pro-cph2357",
+          "part_types": []
+        },
+        {
+          "id": "4635",
+          "name": "Reno8 Lite (CPH2343)",
+          "url": "https://kaquucomponentes.com/4635-reno8-lite-cph2343",
+          "part_types": []
+        },
+        {
+          "id": "5510",
+          "name": "Reno8 5G (CPH2359)",
+          "url": "https://kaquucomponentes.com/5510-reno8-5g-cph2359",
+          "part_types": []
+        },
+        {
+          "id": "5511",
+          "name": "Reno8 4G (CPH2457)",
+          "url": "https://kaquucomponentes.com/5511-reno8-4g-cph2457",
+          "part_types": []
+        },
+        {
+          "id": "5508",
+          "name": "Reno7 Z 5G (CPH2343)",
+          "url": "https://kaquucomponentes.com/5508-reno7-z-5g-cph2343",
+          "part_types": []
+        },
+        {
+          "id": "4628",
+          "name": "Reno7 SE (PFCM00)",
+          "url": "https://kaquucomponentes.com/4628-reno7-se-pfcm00",
+          "part_types": []
+        },
+        {
+          "id": "5509",
+          "name": "Reno7 Lite (CPH2343)",
+          "url": "https://kaquucomponentes.com/5509-reno7-lite-cph2343",
+          "part_types": []
+        },
+        {
+          "id": "4647",
+          "name": "Reno7 5G (CPH2371)",
+          "url": "https://kaquucomponentes.com/4647-reno7-5g-cph2371",
+          "part_types": []
+        },
+        {
+          "id": "4648",
+          "name": "Reno7 (CPH2363)",
+          "url": "https://kaquucomponentes.com/4648-reno7-cph2363",
+          "part_types": []
+        },
+        {
+          "id": "4555",
+          "name": "Reno6 Z (CPH2237)",
+          "url": "https://kaquucomponentes.com/4555-reno6-z-cph2237",
+          "part_types": []
+        },
+        {
+          "id": "4811",
+          "name": "Reno6 Pro Plus 5G (PENM00)",
+          "url": "https://kaquucomponentes.com/4811-reno6-pro-plus-5g-penm00",
+          "part_types": []
+        },
+        {
+          "id": "1464",
+          "name": "Reno6 Pro 5G Snapdragon (CPH2247)",
+          "url": "https://kaquucomponentes.com/1464-reno6-pro-5g-snapdragon-cph2247",
+          "part_types": []
+        },
+        {
+          "id": "4837",
+          "name": "Reno6 Pro 5G (CPH2249)",
+          "url": "https://kaquucomponentes.com/4837-reno6-pro-5g-cph2249",
+          "part_types": []
+        },
+        {
+          "id": "4821",
+          "name": "Reno6 Lite (CPH2205)",
+          "url": "https://kaquucomponentes.com/4821-reno6-lite-cph2205",
+          "part_types": []
+        },
+        {
+          "id": "1465",
+          "name": "Reno6 5G (CPH2251)",
+          "url": "https://kaquucomponentes.com/1465-reno6-5g-cph2251",
+          "part_types": []
+        },
+        {
+          "id": "4806",
+          "name": "Reno6 (CPH2235)",
+          "url": "https://kaquucomponentes.com/4806-reno6-cph2235",
+          "part_types": []
+        },
+        {
+          "id": "4511",
+          "name": "Reno5 Z (CPH2211)",
+          "url": "https://kaquucomponentes.com/4511-reno5-z-cph2211",
+          "part_types": []
+        },
+        {
+          "id": "4651",
+          "name": "Reno5 Pro Plus 5G (PDRT00)",
+          "url": "https://kaquucomponentes.com/4651-reno5-pro-plus-5g-pdrt00",
+          "part_types": []
+        },
+        {
+          "id": "4650",
+          "name": "Reno5 Pro 5G (PDST00)",
+          "url": "https://kaquucomponentes.com/4650-reno5-pro-5g-pdst00",
+          "part_types": []
+        },
+        {
+          "id": "4556",
+          "name": "Reno5 F (CPH2217)",
+          "url": "https://kaquucomponentes.com/4556-reno5-f-cph2217",
+          "part_types": []
+        },
+        {
+          "id": "4818",
+          "name": "Reno5 Lite (CPH2205)",
+          "url": "https://kaquucomponentes.com/4818-reno5-lite-cph2205",
+          "part_types": []
+        },
+        {
+          "id": "4606",
+          "name": "Reno5 5G (CPH2145)",
+          "url": "https://kaquucomponentes.com/4606-reno5-5g-cph2145",
+          "part_types": []
+        },
+        {
+          "id": "4607",
+          "name": "Reno5 4G (CPH2159)",
+          "url": "https://kaquucomponentes.com/4607-reno5-4g-cph2159",
+          "part_types": []
+        },
+        {
+          "id": "4531",
+          "name": "Reno4 Z 5G (CPH2065)",
+          "url": "https://kaquucomponentes.com/4531-reno4-z-5g-cph2065",
+          "part_types": []
+        },
+        {
+          "id": "5876",
+          "name": "Reno4 F (SPH2209)",
+          "url": "https://kaquucomponentes.com/5876-reno4-f-sph2209",
+          "part_types": []
+        },
+        {
+          "id": "4554",
+          "name": "Reno4 Se (PEAM00)",
+          "url": "https://kaquucomponentes.com/4554-reno4-se-peam00",
+          "part_types": []
+        },
+        {
+          "id": "4588",
+          "name": "Reno4 Pro 5G (CPH2089)",
+          "url": "https://kaquucomponentes.com/4588-reno4-pro-5g-cph2089",
+          "part_types": []
+        },
+        {
+          "id": "868",
+          "name": "Reno4 Pro (CPH2109)",
+          "url": "https://kaquucomponentes.com/868-reno4-pro-cph2109",
+          "part_types": []
+        },
+        {
+          "id": "5804",
+          "name": "Reno4 Lite (CPH215)",
+          "url": "https://kaquucomponentes.com/5804-reno4-lite-cph215",
+          "part_types": []
+        },
+        {
+          "id": "4576",
+          "name": "Reno4 5G (CPH2091)",
+          "url": "https://kaquucomponentes.com/4576-reno4-5g-cph2091",
+          "part_types": []
+        },
+        {
+          "id": "867",
+          "name": "Reno4 (CPH2113)",
+          "url": "https://kaquucomponentes.com/867-reno4-cph2113",
+          "part_types": []
+        },
+        {
+          "id": "4532",
+          "name": "Reno3 Pro 5G (CPH2035)",
+          "url": "https://kaquucomponentes.com/4532-reno3-pro-5g-cph2035",
+          "part_types": []
+        },
+        {
+          "id": "6631",
+          "name": "Reno3 5G (PCHM30)",
+          "url": "https://kaquucomponentes.com/6631-reno3-5g-pchm30",
+          "part_types": []
+        },
+        {
+          "id": "853",
+          "name": "Reno3 (CPH2043)",
+          "url": "https://kaquucomponentes.com/853-reno3-cph2043",
+          "part_types": []
+        },
+        {
+          "id": "854",
+          "name": "Reno2 Z (CPH1945)",
+          "url": "https://kaquucomponentes.com/854-reno2-z-cph1945",
+          "part_types": []
+        },
+        {
+          "id": "4564",
+          "name": "Reno2 F (CPH1989)",
+          "url": "https://kaquucomponentes.com/4564-reno2-f-cph1989",
+          "part_types": []
+        },
+        {
+          "id": "4790",
+          "name": "Reno2 (CPH1907)",
+          "url": "https://kaquucomponentes.com/4790-reno2-cph1907",
+          "part_types": []
+        },
+        {
+          "id": "4582",
+          "name": "Reno (CPH1917)",
+          "url": "https://kaquucomponentes.com/4582-reno-cph1917",
+          "part_types": []
+        }
+      ]
+    }
   }
 }
