@@ -76,6 +76,7 @@ export default function CategoryManager({
         ? `Delete "${cat.name}"? This also deletes the ${cat.itemCount} part${cat.itemCount === 1 ? "" : "s"} in it. This cannot be undone.`
         : `Delete "${cat.name}"?`;
     if (!confirm(warning)) return;
+    if (!confirm("Are you sure? This cannot be undone.")) return;
     setDeletingId(cat.id);
     try {
       const res = await fetch(`/api/categories/${cat.id}`, { method: "DELETE" });

@@ -103,6 +103,7 @@ export default function ItemsTable({
 
   async function remove(id: string) {
     if (!confirm("Delete this part from inventory?")) return;
+    if (!confirm("Are you sure? This cannot be undone.")) return;
     setItems((prev) => prev.filter((it) => it.id !== id));
     const res = await fetch(`/api/items/${id}`, { method: "DELETE" });
     if (!res.ok) startTransition(() => router.refresh());
