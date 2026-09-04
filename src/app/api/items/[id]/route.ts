@@ -12,6 +12,8 @@ const EDITABLE_FIELDS = [
   "lowStockThreshold",
 ] as const;
 
+const INTEGER_FIELDS = new Set(["quantity", "lowStockThreshold"]);
+
 export async function PATCH(
   req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -21,7 +23,12 @@ export async function PATCH(
 
   const data: Record<string, unknown> = {};
   for (const field of EDITABLE_FIELDS) {
-    if (field in body) data[field] = body[field];
+    if (field in body) {
+      const value = body[field];
+      data[field] = INTEGER_FIELDS.has(field) && typeof value === "number"
+        ? Math.round(value)
+        : value;
+    }
   }
   if (Object.keys(data).length === 0) {
     return NextResponse.json({ error: "no editable fields provided" }, { status: 400 });

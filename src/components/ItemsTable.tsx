@@ -30,21 +30,27 @@ function EditableNumber({
   value,
   onSave,
   className,
+  integer,
 }: {
   value: number | null;
   onSave: (n: number | null) => void;
   className?: string;
+  integer?: boolean;
 }) {
   const [local, setLocal] = useState(value === null ? "" : String(value));
   return (
     <input
       type="number"
-      step="0.01"
+      step={integer ? "1" : "0.01"}
       value={local}
       onChange={(e) => setLocal(e.target.value)}
       onBlur={() => {
-        const n = local.trim() === "" ? null : Number(local);
-        onSave(Number.isFinite(n) || n === null ? n : null);
+        if (local.trim() === "") {
+          onSave(null);
+          return;
+        }
+        const n = integer ? Math.round(Number(local)) : Number(local);
+        onSave(Number.isFinite(n) ? n : null);
       }}
       className={
         className ??
@@ -183,6 +189,7 @@ export default function ItemsTable({
                   <EditableNumber
                     value={item.quantity}
                     onSave={(n) => update(item.id, "quantity", (n ?? 0) as number)}
+                    integer
                     className={`w-16 rounded border px-2 py-1 text-sm bg-transparent ${
                       low
                         ? "border-red-500 text-red-600 dark:text-red-400 font-semibold"
@@ -194,6 +201,7 @@ export default function ItemsTable({
                   <EditableNumber
                     value={item.lowStockThreshold}
                     onSave={(n) => update(item.id, "lowStockThreshold", (n ?? 0) as number)}
+                    integer
                   />
                 </td>
                 <td className="px-3 py-2 min-w-[8rem]">

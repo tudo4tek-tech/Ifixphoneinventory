@@ -26,8 +26,8 @@ export async function POST(req: NextRequest) {
       notes: body.notes ?? null,
       costPrice: body.costPrice ?? null,
       sellPrice: body.sellPrice ?? null,
-      quantity: Number.isFinite(body.quantity) ? body.quantity : 0,
-      lowStockThreshold: Number.isFinite(body.lowStockThreshold) ? body.lowStockThreshold : 2,
+      quantity: Number.isFinite(body.quantity) ? Math.round(body.quantity) : 0,
+      lowStockThreshold: Number.isFinite(body.lowStockThreshold) ? Math.round(body.lowStockThreshold) : 2,
     },
   });
 
