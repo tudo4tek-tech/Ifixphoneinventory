@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ItemListRow from "@/components/ItemListRow";
+import { ITEM_LIST_SELECT } from "@/lib/itemSelect";
 
 export const dynamic = "force-dynamic";
 
@@ -13,9 +14,7 @@ export default async function InStockPage() {
       where: { quantity: { gt: 0 } },
       orderBy: { updatedAt: "desc" },
       take: LIMIT,
-      include: {
-        partCategory: { include: { model: { include: { deviceLine: { include: { brand: true } } } } } },
-      },
+      select: ITEM_LIST_SELECT,
     }),
   ]);
 

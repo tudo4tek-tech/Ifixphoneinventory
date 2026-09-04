@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ItemListRow from "@/components/ItemListRow";
+import { ITEM_LIST_SELECT } from "@/lib/itemSelect";
 
 export const dynamic = "force-dynamic";
 
@@ -14,9 +15,7 @@ export default async function LowStockPage() {
   const items = await prisma.inventoryItem.findMany({
     where: { id: { in: lowStockRows.slice(0, LIMIT).map((r) => r.id) } },
     orderBy: { quantity: "asc" },
-    include: {
-      partCategory: { include: { model: { include: { deviceLine: { include: { brand: true } } } } } },
-    },
+    select: ITEM_LIST_SELECT,
   });
 
   return (

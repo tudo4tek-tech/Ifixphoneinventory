@@ -36,6 +36,18 @@ export default async function CategoryPage({
   const items = await prisma.inventoryItem.findMany({
     where: { partCategoryId: category.id },
     orderBy: { name: "asc" },
+    select: {
+      id: true,
+      name: true,
+      reference: true,
+      referencePriceEur: true,
+      costPrice: true,
+      sellPrice: true,
+      quantity: true,
+      lowStockThreshold: true,
+      supplier: true,
+      notes: true,
+    },
   });
 
   return (

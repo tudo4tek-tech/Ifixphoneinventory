@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import ItemListRow from "@/components/ItemListRow";
+import { ITEM_LIST_SELECT } from "@/lib/itemSelect";
 
 export const dynamic = "force-dynamic";
 
@@ -11,26 +12,39 @@ export default async function SearchPage({
   const { q } = await searchParams;
   const query = (q ?? "").trim();
 
-  const matchIds = query
+  // Rank by full-text relevance (matches any/all keywords, any order, e.g.
+  // "12 screen iphone" finds the same things as "iphone 12 screen"), and
+  // fall back to a plain substring match for partial codes/words that a
+  // whole-lexeme keyword search would otherwise miss (e.g. typing half of
+  // a reference code). Substring-only hits rank below any keyword match.
+  const rankedIds = query
     ? await prisma.$queryRaw<{ id: string }[]>`
         SELECT id FROM "InventoryItem"
-        WHERE unaccent(name) ILIKE unaccent(${"%" + query + "%"})
+        WHERE to_tsvector('simple', unaccent(name || ' ' || coalesce(reference, '')))
+              @@ websearch_to_tsquery('simple', unaccent(${query}))
+           OR unaccent(name) ILIKE unaccent(${"%" + query + "%"})
            OR (reference IS NOT NULL AND unaccent(reference) ILIKE unaccent(${"%" + query + "%"}))
+        ORDER BY
+          ts_rank(
+            to_tsvector('simple', unaccent(name || ' ' || coalesce(reference, ''))),
+            websearch_to_tsquery('simple', unaccent(${query}))
+          ) DESC NULLS LAST,
+          name ASC
         LIMIT 100
       `
     : [];
 
-  const items = matchIds.length
+  const items = rankedIds.length
     ? await prisma.inventoryItem.findMany({
-        where: { id: { in: matchIds.map((r) => r.id) } },
-        orderBy: { name: "asc" },
-        include: {
-          partCategory: {
-            include: { model: { include: { deviceLine: { include: { brand: true } } } } },
-          },
-        },
+        where: { id: { in: rankedIds.map((r) => r.id) } },
+        select: ITEM_LIST_SELECT,
       })
     : [];
+
+  // Prisma's findMany doesn't preserve the `id IN (...)` order, so re-sort
+  // by the relevance ranking the raw query already computed.
+  const rankIndex = new Map(rankedIds.map((r, i) => [r.id, i]));
+  items.sort((a, b) => (rankIndex.get(a.id) ?? 0) - (rankIndex.get(b.id) ?? 0));
 
   return (
     <div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import ItemListRow from "@/components/ItemListRow";
+import { ITEM_LIST_SELECT } from "@/lib/itemSelect";
 
 export const dynamic = "force-dynamic";
 
@@ -23,9 +24,7 @@ export default async function HomePage() {
       where: { quantity: { gt: 0 } },
       orderBy: { updatedAt: "desc" },
       take: PREVIEW_COUNT,
-      include: {
-        partCategory: { include: { model: { include: { deviceLine: { include: { brand: true } } } } } },
-      },
+      select: ITEM_LIST_SELECT,
     }),
   ]);
   const lowStockCount = lowStockRows.length;
@@ -33,9 +32,7 @@ export default async function HomePage() {
   const lowStockItems = await prisma.inventoryItem.findMany({
     where: { id: { in: lowStockRows.slice(0, PREVIEW_COUNT).map((r) => r.id) } },
     orderBy: { quantity: "asc" },
-    include: {
-      partCategory: { include: { model: { include: { deviceLine: { include: { brand: true } } } } } },
-    },
+    select: ITEM_LIST_SELECT,
   });
 
   return (

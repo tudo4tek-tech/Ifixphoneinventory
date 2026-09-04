@@ -22,10 +22,15 @@ export default async function ModelPage({
   if (!line) notFound();
   const model = await prisma.model.findUnique({
     where: { deviceLineId_slug: { deviceLineId: line.id, slug: modelSlug } },
-    include: {
+    select: {
+      id: true,
+      name: true,
+      slug: true,
       categories: {
         orderBy: { order: "asc" },
-        include: {
+        select: {
+          id: true,
+          name: true,
           _count: { select: { items: true } },
           items: { select: { quantity: true, lowStockThreshold: true } },
         },
@@ -44,16 +49,6 @@ export default async function ModelPage({
         ]}
       />
       <h1 className="text-2xl font-semibold mb-1">{model.name}</h1>
-      {model.sourceUrl && (
-        <a
-          href={model.sourceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          reference listing ↗
-        </a>
-      )}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
         {model.categories.map((cat) => {
           const totalQty = cat.items.reduce((sum, it) => sum + it.quantity, 0);

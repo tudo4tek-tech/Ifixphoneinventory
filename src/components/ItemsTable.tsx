@@ -7,7 +7,6 @@ export type InventoryItemDTO = {
   id: string;
   name: string;
   reference: string | null;
-  sourceUrl: string | null;
   referencePriceEur: number | null;
   costPrice: number | null;
   sellPrice: number | null;
@@ -153,20 +152,7 @@ export default function ItemsTable({
             const low = item.quantity <= item.lowStockThreshold;
             return (
               <tr key={item.id} className={low ? "bg-red-500/5" : undefined}>
-                <td className="px-3 py-2 max-w-xs">
-                  {item.sourceUrl ? (
-                    <a
-                      href={item.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      {item.name}
-                    </a>
-                  ) : (
-                    item.name
-                  )}
-                </td>
+                <td className="px-3 py-2 max-w-xs">{item.name}</td>
                 <td className="px-3 py-2 text-black/60 dark:text-white/60 whitespace-nowrap">
                   {item.reference ?? "—"}
                 </td>
