@@ -21,7 +21,6 @@ export async function POST(req: NextRequest) {
     data: {
       name: name.trim(),
       partCategoryId,
-      reference: body.reference ?? null,
       supplier: body.supplier ?? null,
       notes: body.notes ?? null,
       costPrice: body.costPrice ?? null,

@@ -2,21 +2,6 @@
 // Applied at seed time so the raw scrape (data/*.json) stays historically
 // accurate to what the source site actually showed.
 
-export const PART_TYPE_TRANSLATIONS: Record<string, string> = {
-  "Pantallas": "Screens",
-  "Baterías": "Batteries",
-  "Tapas": "Back Covers",
-  "Chasis": "Chassis",
-  "Conectores": "Connectors",
-  "Cámaras": "Cameras",
-  "Altavoces": "Speakers",
-  "Flex": "Flex Cables",
-  "Adhesivos": "Adhesives",
-  "Sim & Botones": "SIM & Buttons",
-  "IC & Tornillos": "IC & Screws",
-  "Otros": "Other",
-};
-
 // Multi-word phrases, longest/most-specific first. Matched case-insensitively
 // with word boundaries; replacement case follows the matched text's case.
 const PHRASES: [string, string][] = [
@@ -120,6 +105,15 @@ const WORDS: Record<string, string> = {
   "goma": "rubber",
   "imanes": "magnets",
   "antipolvo": "dust-proof",
+  "tornillo": "screw", "tornillos": "screws",
+  "circuito": "circuit",
+  "tarjeta": "card",
+  "chapa": "plate", "chapas": "plates",
+  "auxiliar": "auxiliary",
+  "disco": "disk",
+  "libre": "unlocked",
+  "ventilador": "fan",
+  "memoria": "memory",
   "profundidad": "depth",
   "retroiluminación": "backlight", "retroiluminacion": "backlight",
   "película": "film", "pelicula": "film",

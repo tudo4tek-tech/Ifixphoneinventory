@@ -3,7 +3,6 @@ import { prisma } from "@/lib/prisma";
 
 const EDITABLE_FIELDS = [
   "name",
-  "reference",
   "supplier",
   "notes",
   "costPrice",

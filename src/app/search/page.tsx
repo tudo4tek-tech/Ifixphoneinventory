@@ -20,13 +20,11 @@ export default async function SearchPage({
   const rankedIds = query
     ? await prisma.$queryRaw<{ id: string }[]>`
         SELECT id FROM "InventoryItem"
-        WHERE to_tsvector('simple', unaccent(name || ' ' || coalesce(reference, '')))
-              @@ websearch_to_tsquery('simple', unaccent(${query}))
+        WHERE to_tsvector('simple', unaccent(name)) @@ websearch_to_tsquery('simple', unaccent(${query}))
            OR unaccent(name) ILIKE unaccent(${"%" + query + "%"})
-           OR (reference IS NOT NULL AND unaccent(reference) ILIKE unaccent(${"%" + query + "%"}))
         ORDER BY
           ts_rank(
-            to_tsvector('simple', unaccent(name || ' ' || coalesce(reference, ''))),
+            to_tsvector('simple', unaccent(name)),
             websearch_to_tsquery('simple', unaccent(${query}))
           ) DESC NULLS LAST,
           name ASC

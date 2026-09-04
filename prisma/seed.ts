@@ -1,12 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 import fs from "node:fs";
 import path from "node:path";
-import {
-  translateText,
-  translateLineName,
-  translateModelName,
-  PART_TYPE_TRANSLATIONS,
-} from "./translate";
+import { translateText, translateLineName, translateModelName } from "./translate";
+import { classifyCategory, CATEGORY_ORDER } from "./classify";
 
 const prisma = new PrismaClient();
 
@@ -19,21 +15,6 @@ function slugify(input: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
-
-const PART_TYPE_ORDER: Record<string, number> = {
-  "Screens": 1,
-  "Batteries": 2,
-  "Back Covers": 3,
-  "Chassis": 4,
-  "Connectors": 5,
-  "Cameras": 6,
-  "Speakers": 7,
-  "Flex Cables": 8,
-  "Adhesives": 9,
-  "SIM & Buttons": 10,
-  "IC & Screws": 11,
-  "Other": 99,
-};
 
 type Tree = Record<
   string,
@@ -72,10 +53,6 @@ function parsePrice(raw: string | null): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
-function translatePartType(name: string): string {
-  return PART_TYPE_TRANSLATIONS[name] ?? translateText(name);
-}
-
 async function main() {
   const dataDir = path.join(__dirname, "..", "data");
   const tree: Tree = JSON.parse(fs.readFileSync(path.join(dataDir, "categories_tree.json"), "utf-8"));
@@ -92,12 +69,15 @@ async function main() {
   await prisma.brand.deleteMany({});
 
   // Index products by original (pre-translation) "brand||line||model" so we
-  // can attach them to the right model as scraped.
-  const byModel = new Map<string, RawModelResult[]>();
+  // can attach them to the right model as scraped. A model may have several
+  // groups (one per scraped source subcategory); we flatten all of them and
+  // reclassify every product fresh, ignoring the old grouping, so every
+  // brand/model ends up using the exact same standardized category set.
+  const byModel = new Map<string, RawProduct[]>();
   for (const p of products) {
     const key = `${p.brand}||${p.line}||${p.model}`;
     if (!byModel.has(key)) byModel.set(key, []);
-    byModel.get(key)!.push(p);
+    byModel.get(key)!.push(...p.products);
   }
 
   let brandCount = 0, lineCount = 0, modelCount = 0, categoryCount = 0, itemCount = 0;
@@ -138,24 +118,33 @@ async function main() {
         // Look up scraped products using the ORIGINAL (untranslated) key,
         // since that's how the scraper recorded brand/line/model.
         const key = `${brandName}||${lineName}||${model.name}`;
-        const groups = byModel.get(key) ?? [];
+        const rawProducts = byModel.get(key) ?? [];
 
-        for (const group of groups) {
-          if (group.products.length === 0) continue;
-          const categoryName = translatePartType(group.part_type_name);
+        // Translate every product name once, then classify by the
+        // translated text so category assignment matches what a reader
+        // actually sees, and bucket by the resulting standardized name.
+        const byCategory = new Map<string, { prod: RawProduct; translatedName: string }[]>();
+        for (const prod of rawProducts) {
+          if (!prod.name) continue;
+          const translatedName = translateText(prod.name);
+          const categoryName = classifyCategory(translatedName);
+          if (!byCategory.has(categoryName)) byCategory.set(categoryName, []);
+          byCategory.get(categoryName)!.push({ prod, translatedName });
+        }
+
+        for (const [categoryName, entries] of byCategory) {
           const partCategory = await prisma.partCategory.upsert({
             where: { modelId_name: { modelId: modelRow.id, name: categoryName } },
             update: {},
             create: {
               name: categoryName,
-              order: PART_TYPE_ORDER[categoryName] ?? 50,
+              order: CATEGORY_ORDER[categoryName] ?? 50,
               modelId: modelRow.id,
             },
           });
           categoryCount++;
 
-          for (const prod of group.products) {
-            if (!prod.name) continue;
+          for (const { prod, translatedName } of entries) {
             const existing = prod.id
               ? await prisma.inventoryItem.findFirst({
                   where: { partCategoryId: partCategory.id, sourceProductId: prod.id },
@@ -164,7 +153,7 @@ async function main() {
             if (existing) continue;
             await prisma.inventoryItem.create({
               data: {
-                name: translateText(prod.name),
+                name: translatedName,
                 reference: prod.ref ?? null,
                 sourceProductId: prod.id ?? null,
                 sourceUrl: prod.url ?? null,

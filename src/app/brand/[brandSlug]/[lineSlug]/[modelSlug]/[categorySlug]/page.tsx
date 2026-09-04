@@ -39,7 +39,6 @@ export default async function CategoryPage({
     select: {
       id: true,
       name: true,
-      reference: true,
       referencePriceEur: true,
       costPrice: true,
       sellPrice: true,

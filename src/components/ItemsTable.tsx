@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 export type InventoryItemDTO = {
   id: string;
   name: string;
-  reference: string | null;
   referencePriceEur: number | null;
   costPrice: number | null;
   sellPrice: number | null;
@@ -136,7 +135,6 @@ export default function ItemsTable({
         <thead className="bg-black/[0.03] dark:bg-white/[0.03] text-left">
           <tr>
             <th className="px-3 py-2 font-medium">Part</th>
-            <th className="px-3 py-2 font-medium">Reference</th>
             <th className="px-3 py-2 font-medium">Ref. price</th>
             <th className="px-3 py-2 font-medium">Cost</th>
             <th className="px-3 py-2 font-medium">Sell</th>
@@ -153,9 +151,6 @@ export default function ItemsTable({
             return (
               <tr key={item.id} className={low ? "bg-red-500/5" : undefined}>
                 <td className="px-3 py-2 max-w-xs">{item.name}</td>
-                <td className="px-3 py-2 text-black/60 dark:text-white/60 whitespace-nowrap">
-                  {item.reference ?? "—"}
-                </td>
                 <td className="px-3 py-2 text-black/60 dark:text-white/60 whitespace-nowrap">
                   {item.referencePriceEur != null ? `${item.referencePriceEur.toFixed(2)} €` : "—"}
                 </td>
@@ -218,7 +213,7 @@ export default function ItemsTable({
           })}
           {items.length === 0 && (
             <tr>
-              <td colSpan={10} className="px-3 py-6 text-center text-black/50 dark:text-white/50">
+              <td colSpan={9} className="px-3 py-6 text-center text-black/50 dark:text-white/50">
                 No parts in this category yet. Add one below.
               </td>
             </tr>
