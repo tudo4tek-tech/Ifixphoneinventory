@@ -6834,5 +6834,1951 @@
         }
       ]
     }
+  },
+  "Xiaomi": {
+    "Serie Xiaomi": {
+      "id": "4597",
+      "url": "https://kaquucomponentes.com/4597-serie-xiaomi",
+      "models": [
+        {
+          "id": "6682",
+          "name": "Xiaomi 17 Ultra (25128PNA1G)",
+          "url": "https://kaquucomponentes.com/6682-xiaomi-17-ultra-25128pna1g",
+          "part_types": []
+        },
+        {
+          "id": "6685",
+          "name": "Xiaomi 17 Pro Max (2509FPN0BC)",
+          "url": "https://kaquucomponentes.com/6685-xiaomi-17-pro-max-2509fpn0bc",
+          "part_types": []
+        },
+        {
+          "id": "6686",
+          "name": "Xiaomi 17 Pro (25098PN5AC)",
+          "url": "https://kaquucomponentes.com/6686-xiaomi-17-pro-25098pn5ac",
+          "part_types": []
+        },
+        {
+          "id": "6681",
+          "name": "Xiaomi 17 (25113PN0EG)",
+          "url": "https://kaquucomponentes.com/6681-xiaomi-17-25113pn0eg",
+          "part_types": []
+        },
+        {
+          "id": "6020",
+          "name": "Xiaomi 15 Ultra (25010PN30G)",
+          "url": "https://kaquucomponentes.com/6020-xiaomi-15-ultra-25010pn30g",
+          "part_types": []
+        },
+        {
+          "id": "6541",
+          "name": "Xiaomi 15T Pro 5G (2506BPN68G)",
+          "url": "https://kaquucomponentes.com/6541-xiaomi-15t-pro-5g-2506bpn68g",
+          "part_types": []
+        },
+        {
+          "id": "6540",
+          "name": "Xiaomi 15T 5G (25069PTEBG)",
+          "url": "https://kaquucomponentes.com/6540-xiaomi-15t-5g-25069ptebg",
+          "part_types": []
+        },
+        {
+          "id": "6687",
+          "name": "Xiaomi 15 Pro (24101PNB7C)",
+          "url": "https://kaquucomponentes.com/6687-xiaomi-15-pro-24101pnb7c",
+          "part_types": []
+        },
+        {
+          "id": "6017",
+          "name": "Xiaomi 15 (24129PN74G)",
+          "url": "https://kaquucomponentes.com/6017-xiaomi-15-24129pn74g",
+          "part_types": []
+        },
+        {
+          "id": "5682",
+          "name": "Xiaomi 14 Ultra (24031PN0DC)",
+          "url": "https://kaquucomponentes.com/5682-xiaomi-14-ultra-24031pn0dc",
+          "part_types": []
+        },
+        {
+          "id": "5874",
+          "name": "Xiaomi 14T Pro 5G (2407FPN8EG)",
+          "url": "https://kaquucomponentes.com/5874-xiaomi-14t-pro-5g-2407fpn8eg",
+          "part_types": []
+        },
+        {
+          "id": "5873",
+          "name": "Xiaomi 14T 5G (2406APNFAG)",
+          "url": "https://kaquucomponentes.com/5873-xiaomi-14t-5g-2406apnfag",
+          "part_types": []
+        },
+        {
+          "id": "5471",
+          "name": "Xiaomi 14 (23127PN0CC)",
+          "url": "https://kaquucomponentes.com/5471-xiaomi-14-23127pn0cc",
+          "part_types": []
+        },
+        {
+          "id": "5331",
+          "name": "Xiaomi 13 Ultra (2304FPN6DC)",
+          "url": "https://kaquucomponentes.com/5331-xiaomi-13-ultra-2304fpn6dc",
+          "part_types": []
+        },
+        {
+          "id": "5330",
+          "name": "Xiaomi 13T Pro (23078PND5G)",
+          "url": "https://kaquucomponentes.com/5330-xiaomi-13t-pro-23078pnd5g",
+          "part_types": []
+        },
+        {
+          "id": "5329",
+          "name": "Xiaomi 13T (2306EPN60G)",
+          "url": "https://kaquucomponentes.com/5329-xiaomi-13t-2306epn60g",
+          "part_types": []
+        },
+        {
+          "id": "5332",
+          "name": "Xiaomi 13 Pro (2210132G)",
+          "url": "https://kaquucomponentes.com/5332-xiaomi-13-pro-2210132g",
+          "part_types": []
+        },
+        {
+          "id": "5328",
+          "name": "Xiaomi 13 Lite",
+          "url": "https://kaquucomponentes.com/5328-xiaomi-13-lite",
+          "part_types": []
+        },
+        {
+          "id": "5333",
+          "name": "Xiaomi 13 (2211133C)",
+          "url": "https://kaquucomponentes.com/5333-xiaomi-13-2211133c",
+          "part_types": []
+        },
+        {
+          "id": "1429",
+          "name": "Xiaomi 12X 5G (2112123AC)",
+          "url": "https://kaquucomponentes.com/1429-xiaomi-12x-5g-2112123ac",
+          "part_types": []
+        },
+        {
+          "id": "4860",
+          "name": "Xiaomi 12T Pro (22081212AG)",
+          "url": "https://kaquucomponentes.com/4860-xiaomi-12t-pro-22081212ag",
+          "part_types": []
+        },
+        {
+          "id": "4859",
+          "name": "Xiaomi 12T (22071212AG)",
+          "url": "https://kaquucomponentes.com/4859-xiaomi-12t-22071212ag",
+          "part_types": []
+        },
+        {
+          "id": "5226",
+          "name": "Xiaomi 12S Pro (2206122SC)",
+          "url": "https://kaquucomponentes.com/5226-xiaomi-12s-pro-2206122sc",
+          "part_types": []
+        },
+        {
+          "id": "4956",
+          "name": "Xiaomi 12s (2206123SC)",
+          "url": "https://kaquucomponentes.com/4956-xiaomi-12s-2206123sc",
+          "part_types": []
+        },
+        {
+          "id": "1463",
+          "name": "Xiaomi 12 Pro (2201122C)",
+          "url": "https://kaquucomponentes.com/1463-xiaomi-12-pro-2201122c",
+          "part_types": []
+        },
+        {
+          "id": "5450",
+          "name": "Xiaomi 12 Lite (2203129G)",
+          "url": "https://kaquucomponentes.com/5450-xiaomi-12-lite-2203129g",
+          "part_types": []
+        },
+        {
+          "id": "1462",
+          "name": "Xiaomi 12 5G (2201123G)",
+          "url": "https://kaquucomponentes.com/1462-xiaomi-12-5g-2201123g",
+          "part_types": []
+        },
+        {
+          "id": "1396",
+          "name": "Xiaomi 11T Pro  (2107113SG)",
+          "url": "https://kaquucomponentes.com/1396-xiaomi-11t-pro-2107113sg",
+          "part_types": []
+        },
+        {
+          "id": "4596",
+          "name": "Xiaomi 11T Lite 2021",
+          "url": "https://kaquucomponentes.com/4596-xiaomi-11t-lite-2021",
+          "part_types": []
+        },
+        {
+          "id": "1394",
+          "name": "Xiaomi 11T 5G (21081111RG)",
+          "url": "https://kaquucomponentes.com/1394-xiaomi-11t-5g-21081111rg",
+          "part_types": []
+        },
+        {
+          "id": "4494",
+          "name": "Xiaomi 11 Lite 5G NE (2109119DG)",
+          "url": "https://kaquucomponentes.com/4494-xiaomi-11-lite-5g-ne-2109119dg",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Mi": {
+      "id": "1043",
+      "url": "https://kaquucomponentes.com/1043-serie-mi",
+      "models": [
+        {
+          "id": "1393",
+          "name": "Mi 11 Ultra (M2102K1G)",
+          "url": "https://kaquucomponentes.com/1393-mi-11-ultra-m2102k1g",
+          "part_types": []
+        },
+        {
+          "id": "1283",
+          "name": "Mi 11 Pro (M2102K1AC)",
+          "url": "https://kaquucomponentes.com/1283-mi-11-pro-m2102k1ac",
+          "part_types": []
+        },
+        {
+          "id": "1018",
+          "name": "Mi 11 Lite 5G (M2101K9G)",
+          "url": "https://kaquucomponentes.com/1018-mi-11-lite-5g-m2101k9g",
+          "part_types": []
+        },
+        {
+          "id": "1020",
+          "name": "Mi 11 Lite 4G (M2101K9AG)",
+          "url": "https://kaquucomponentes.com/1020-mi-11-lite-4g-m2101k9ag",
+          "part_types": []
+        },
+        {
+          "id": "1321",
+          "name": "Mi 11 5G (M2011K2G / M2011K2C)",
+          "url": "https://kaquucomponentes.com/1321-mi-11-5g-m2011k2g-m2011k2c",
+          "part_types": []
+        },
+        {
+          "id": "4770",
+          "name": "Mi 11T 5G (21081111RG)",
+          "url": "https://kaquucomponentes.com/4770-mi-11t-5g-21081111rg",
+          "part_types": []
+        },
+        {
+          "id": "1281",
+          "name": "Mi 11X Pro (M2012K11I)",
+          "url": "https://kaquucomponentes.com/1281-mi-11x-pro-m2012k11i",
+          "part_types": []
+        },
+        {
+          "id": "4911",
+          "name": "Mi 11X (M2012K11AI)",
+          "url": "https://kaquucomponentes.com/4911-mi-11x-m2012k11ai",
+          "part_types": []
+        },
+        {
+          "id": "1282",
+          "name": "Mi 11i (M2012K11G)",
+          "url": "https://kaquucomponentes.com/1282-mi-11i-m2012k11g",
+          "part_types": []
+        },
+        {
+          "id": "4816",
+          "name": "Mi 10 Ultra (M2007J1SC)",
+          "url": "https://kaquucomponentes.com/4816-mi-10-ultra-m2007j1sc",
+          "part_types": []
+        },
+        {
+          "id": "897",
+          "name": "Mi 10 Pro 5G (M2001J1G)",
+          "url": "https://kaquucomponentes.com/897-mi-10-pro-5g-m2001j1g",
+          "part_types": []
+        },
+        {
+          "id": "899",
+          "name": "Mi 10 Lite 5G (M2002J9G)",
+          "url": "https://kaquucomponentes.com/899-mi-10-lite-5g-m2002j9g",
+          "part_types": []
+        },
+        {
+          "id": "895",
+          "name": "Mi 10 5G (M2001J2G)",
+          "url": "https://kaquucomponentes.com/895-mi-10-5g-m2001j2g",
+          "part_types": []
+        },
+        {
+          "id": "913",
+          "name": "Mi 10T Pro 5G (M2007J3SG)",
+          "url": "https://kaquucomponentes.com/913-mi-10t-pro-5g-m2007j3sg",
+          "part_types": []
+        },
+        {
+          "id": "1304",
+          "name": "Mi 10T Lite 5G (M2007J17G)",
+          "url": "https://kaquucomponentes.com/1304-mi-10t-lite-5g-m2007j17g",
+          "part_types": []
+        },
+        {
+          "id": "912",
+          "name": "Mi 10T 5G (M2007J3SY)",
+          "url": "https://kaquucomponentes.com/912-mi-10t-5g-m2007j3sy",
+          "part_types": []
+        },
+        {
+          "id": "4599",
+          "name": "Mi 10s (M2102J2SC)",
+          "url": "https://kaquucomponentes.com/4599-mi-10s-m2102j2sc",
+          "part_types": []
+        },
+        {
+          "id": "419",
+          "name": "Mi 9 SE (M1903F2G)",
+          "url": "https://kaquucomponentes.com/419-mi-9-se-m1903f2g",
+          "part_types": []
+        },
+        {
+          "id": "381",
+          "name": "Mi 9 (M1902F1G)",
+          "url": "https://kaquucomponentes.com/381-mi-9-m1902f1g",
+          "part_types": []
+        },
+        {
+          "id": "935",
+          "name": "Mi CC9 Pro (M1910F4E)",
+          "url": "https://kaquucomponentes.com/935-mi-cc9-pro-m1910f4e",
+          "part_types": []
+        },
+        {
+          "id": "4698",
+          "name": "Mi CC9e (M1906F9SC)",
+          "url": "https://kaquucomponentes.com/4698-mi-cc9e-m1906f9sc",
+          "part_types": []
+        },
+        {
+          "id": "500",
+          "name": "Mi 9T Pro (M1903F11G)",
+          "url": "https://kaquucomponentes.com/500-mi-9t-pro-m1903f11g",
+          "part_types": []
+        },
+        {
+          "id": "490",
+          "name": "Mi 9T (M1903F10G)",
+          "url": "https://kaquucomponentes.com/490-mi-9t-m1903f10g",
+          "part_types": []
+        },
+        {
+          "id": "728",
+          "name": "Mi 9 Lite / CC9 (M1904F3BG)",
+          "url": "https://kaquucomponentes.com/728-mi-9-lite-cc9-m1904f3bg",
+          "part_types": []
+        },
+        {
+          "id": "1266",
+          "name": "Mi 8 Pro (M1807E8A)",
+          "url": "https://kaquucomponentes.com/1266-mi-8-pro-m1807e8a",
+          "part_types": []
+        },
+        {
+          "id": "347",
+          "name": "Mi 8 (M1803E1A)",
+          "url": "https://kaquucomponentes.com/347-mi-8-m1803e1a",
+          "part_types": []
+        },
+        {
+          "id": "818",
+          "name": "Mi 8 SE",
+          "url": "https://kaquucomponentes.com/818-mi-8-se",
+          "part_types": []
+        },
+        {
+          "id": "279",
+          "name": "Mi 8 Lite (M1808D2TG)",
+          "url": "https://kaquucomponentes.com/279-mi-8-lite-m1808d2tg",
+          "part_types": []
+        },
+        {
+          "id": "295",
+          "name": "Mi 6X (M1804D2SG)",
+          "url": "https://kaquucomponentes.com/295-mi-6x-m1804d2sg",
+          "part_types": []
+        },
+        {
+          "id": "285",
+          "name": "Mi 6 (MCE16)",
+          "url": "https://kaquucomponentes.com/285-mi-6-mce16",
+          "part_types": []
+        },
+        {
+          "id": "596",
+          "name": "Mi 5 (2015105)",
+          "url": "https://kaquucomponentes.com/596-mi-5-2015105",
+          "part_types": []
+        },
+        {
+          "id": "294",
+          "name": "Mi 5X (MDG2)",
+          "url": "https://kaquucomponentes.com/294-mi-5x-mdg2",
+          "part_types": []
+        },
+        {
+          "id": "453",
+          "name": "Mi 5S",
+          "url": "https://kaquucomponentes.com/453-mi-5s",
+          "part_types": []
+        },
+        {
+          "id": "378",
+          "name": "Mi 5C",
+          "url": "https://kaquucomponentes.com/378-mi-5c",
+          "part_types": []
+        },
+        {
+          "id": "286",
+          "name": "Mi 5S Plus",
+          "url": "https://kaquucomponentes.com/286-mi-5s-plus",
+          "part_types": []
+        },
+        {
+          "id": "592",
+          "name": "Mi 4 (2014215)",
+          "url": "https://kaquucomponentes.com/592-mi-4-2014215",
+          "part_types": []
+        },
+        {
+          "id": "572",
+          "name": "Mi 4C",
+          "url": "https://kaquucomponentes.com/572-mi-4c",
+          "part_types": []
+        },
+        {
+          "id": "520",
+          "name": "Mi 4i (2015015)",
+          "url": "https://kaquucomponentes.com/520-mi-4i-2015015",
+          "part_types": []
+        },
+        {
+          "id": "593",
+          "name": "Mi 4S",
+          "url": "https://kaquucomponentes.com/593-mi-4s",
+          "part_types": []
+        },
+        {
+          "id": "591",
+          "name": "Mi 3",
+          "url": "https://kaquucomponentes.com/591-mi-3",
+          "part_types": []
+        },
+        {
+          "id": "595",
+          "name": "Mi 2",
+          "url": "https://kaquucomponentes.com/595-mi-2",
+          "part_types": []
+        },
+        {
+          "id": "594",
+          "name": "Mi 2S",
+          "url": "https://kaquucomponentes.com/594-mi-2s",
+          "part_types": []
+        },
+        {
+          "id": "682",
+          "name": "Mi A3 (M1906F9SH)",
+          "url": "https://kaquucomponentes.com/682-mi-a3-m1906f9sh",
+          "part_types": []
+        },
+        {
+          "id": "292",
+          "name": "Mi A2 (M1804D2SG)",
+          "url": "https://kaquucomponentes.com/292-mi-a2-m1804d2sg",
+          "part_types": []
+        },
+        {
+          "id": "293",
+          "name": "Mi A2 Lite (M1805D1SG)",
+          "url": "https://kaquucomponentes.com/293-mi-a2-lite-m1805d1sg",
+          "part_types": []
+        },
+        {
+          "id": "291",
+          "name": "Mi A1 (MDG2)",
+          "url": "https://kaquucomponentes.com/291-mi-a1-mdg2",
+          "part_types": []
+        },
+        {
+          "id": "817",
+          "name": "Mi Note 10 Pro (M1910F4S)",
+          "url": "https://kaquucomponentes.com/817-mi-note-10-pro-m1910f4s",
+          "part_types": []
+        },
+        {
+          "id": "816",
+          "name": "Mi Note 10 (M1910F4G)",
+          "url": "https://kaquucomponentes.com/816-mi-note-10-m1910f4g",
+          "part_types": []
+        },
+        {
+          "id": "815",
+          "name": "Mi Note 10 Lite (M2002F4LG)",
+          "url": "https://kaquucomponentes.com/815-mi-note-10-lite-m2002f4lg",
+          "part_types": []
+        },
+        {
+          "id": "743",
+          "name": "Mi Note 3",
+          "url": "https://kaquucomponentes.com/743-mi-note-3",
+          "part_types": []
+        },
+        {
+          "id": "519",
+          "name": "Mi Note Pro",
+          "url": "https://kaquucomponentes.com/519-mi-note-pro",
+          "part_types": []
+        },
+        {
+          "id": "5736",
+          "name": "Mi Mix Flip (2405CPX3DC)",
+          "url": "https://kaquucomponentes.com/5736-mi-mix-flip-2405cpx3dc",
+          "part_types": []
+        },
+        {
+          "id": "904",
+          "name": "Mi Mix 3 (M1810E5A)",
+          "url": "https://kaquucomponentes.com/904-mi-mix-3-m1810e5a",
+          "part_types": []
+        },
+        {
+          "id": "289",
+          "name": "Mi Mix 2 (MDE5)",
+          "url": "https://kaquucomponentes.com/289-mi-mix-2-mde5",
+          "part_types": []
+        },
+        {
+          "id": "290",
+          "name": "Mi Mix 2S (M1803D5XA)",
+          "url": "https://kaquucomponentes.com/290-mi-mix-2s-m1803d5xa",
+          "part_types": []
+        },
+        {
+          "id": "288",
+          "name": "Mi Mix",
+          "url": "https://kaquucomponentes.com/288-mi-mix",
+          "part_types": []
+        },
+        {
+          "id": "283",
+          "name": "Mi Max 3 (M1804E4A)",
+          "url": "https://kaquucomponentes.com/283-mi-max-3-m1804e4a",
+          "part_types": []
+        },
+        {
+          "id": "282",
+          "name": "Mi Max 2 (MDE40)",
+          "url": "https://kaquucomponentes.com/282-mi-max-2-mde40",
+          "part_types": []
+        },
+        {
+          "id": "281",
+          "name": "Mi Max (2016001)",
+          "url": "https://kaquucomponentes.com/281-mi-max-2016001",
+          "part_types": []
+        },
+        {
+          "id": "278",
+          "name": "Mi Play (M1901F9E9)",
+          "url": "https://kaquucomponentes.com/278-mi-play-m1901f9e9",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Redmi": {
+      "id": "1044",
+      "url": "https://kaquucomponentes.com/1044-serie-redmi",
+      "models": [
+        {
+          "id": "6714",
+          "name": "Redmi Turbo 4 (24129RT7CC)",
+          "url": "https://kaquucomponentes.com/6714-redmi-turbo-4-24129rt7cc",
+          "part_types": []
+        },
+        {
+          "id": "6588",
+          "name": "Redmi 15C 5G (2508CRN2BC)",
+          "url": "https://kaquucomponentes.com/6588-redmi-15c-5g-2508crn2bc",
+          "part_types": []
+        },
+        {
+          "id": "6239",
+          "name": "Redmi 15C (25078RA3EA)",
+          "url": "https://kaquucomponentes.com/6239-redmi-15c-25078ra3ea",
+          "part_types": []
+        },
+        {
+          "id": "6647",
+          "name": "Redmi 15 5G (25057RN09E)",
+          "url": "https://kaquucomponentes.com/6647-redmi-15-5g-25057rn09e",
+          "part_types": []
+        },
+        {
+          "id": "6238",
+          "name": "Redmi 15 4G (25062RN2DE)",
+          "url": "https://kaquucomponentes.com/6238-redmi-15-4g-25062rn2de",
+          "part_types": []
+        },
+        {
+          "id": "5925",
+          "name": "Redmi 14C (2411DRN47C)",
+          "url": "https://kaquucomponentes.com/5925-redmi-14c-2411drn47c",
+          "part_types": []
+        },
+        {
+          "id": "6584",
+          "name": "Redmi 13C 5G (23124RN87G)",
+          "url": "https://kaquucomponentes.com/6584-redmi-13c-5g-23124rn87g",
+          "part_types": []
+        },
+        {
+          "id": "5473",
+          "name": "Redmi 13C 4G (23100RN82L)",
+          "url": "https://kaquucomponentes.com/5473-redmi-13c-4g-23100rn82l",
+          "part_types": []
+        },
+        {
+          "id": "6993",
+          "name": "Redmi 13 5G (2406ERN9CI)",
+          "url": "https://kaquucomponentes.com/6993-redmi-13-5g-2406ern9ci",
+          "part_types": []
+        },
+        {
+          "id": "5580",
+          "name": "Redmi 13 4G (2404ARN45A)",
+          "url": "https://kaquucomponentes.com/5580-redmi-13-4g-2404arn45a",
+          "part_types": []
+        },
+        {
+          "id": "5204",
+          "name": "Redmi 12C (22120RN86G)",
+          "url": "https://kaquucomponentes.com/5204-redmi-12c-22120rn86g",
+          "part_types": []
+        },
+        {
+          "id": "5206",
+          "name": "Redmi 12 5G (23076RN4BI)",
+          "url": "https://kaquucomponentes.com/5206-redmi-12-5g-23076rn4bi",
+          "part_types": []
+        },
+        {
+          "id": "5205",
+          "name": "Redmi 12 (23053RN02A)",
+          "url": "https://kaquucomponentes.com/5205-redmi-12-23053rn02a",
+          "part_types": []
+        },
+        {
+          "id": "4593",
+          "name": "Redmi 10x Pro 5G (M2004J7BC )",
+          "url": "https://kaquucomponentes.com/4593-redmi-10x-pro-5g-m2004j7bc-",
+          "part_types": []
+        },
+        {
+          "id": "812",
+          "name": "Redmi 10X 5G (M2004J7AC)",
+          "url": "https://kaquucomponentes.com/812-redmi-10x-5g-m2004j7ac",
+          "part_types": []
+        },
+        {
+          "id": "808",
+          "name": "Redmi 10X 4G (M2003J15SS)",
+          "url": "https://kaquucomponentes.com/808-redmi-10x-4g-m2003j15ss",
+          "part_types": []
+        },
+        {
+          "id": "4503",
+          "name": "Redmi 10C",
+          "url": "https://kaquucomponentes.com/4503-redmi-10c",
+          "part_types": []
+        },
+        {
+          "id": "5326",
+          "name": "Redmi 10A Sport",
+          "url": "https://kaquucomponentes.com/5326-redmi-10a-sport",
+          "part_types": []
+        },
+        {
+          "id": "4502",
+          "name": "Redmi 10A (220233L2G)",
+          "url": "https://kaquucomponentes.com/4502-redmi-10a-220233l2g",
+          "part_types": []
+        },
+        {
+          "id": "4960",
+          "name": "Redmi 10 Power",
+          "url": "https://kaquucomponentes.com/4960-redmi-10-power",
+          "part_types": []
+        },
+        {
+          "id": "4800",
+          "name": "Redmi 10 Prime (21061119B1)",
+          "url": "https://kaquucomponentes.com/4800-redmi-10-prime-21061119b1",
+          "part_types": []
+        },
+        {
+          "id": "1461",
+          "name": "Redmi 10 2022",
+          "url": "https://kaquucomponentes.com/1461-redmi-10-2022",
+          "part_types": []
+        },
+        {
+          "id": "5021",
+          "name": "Redmi 10 5G (22041219NY)",
+          "url": "https://kaquucomponentes.com/5021-redmi-10-5g-22041219ny",
+          "part_types": []
+        },
+        {
+          "id": "1428",
+          "name": "Redmi 10 2021",
+          "url": "https://kaquucomponentes.com/1428-redmi-10-2021",
+          "part_types": []
+        },
+        {
+          "id": "973",
+          "name": "Redmi 9T",
+          "url": "https://kaquucomponentes.com/973-redmi-9t",
+          "part_types": []
+        },
+        {
+          "id": "4910",
+          "name": "Redmi 9i (MZB0813IN)",
+          "url": "https://kaquucomponentes.com/4910-redmi-9i-mzb0813in",
+          "part_types": []
+        },
+        {
+          "id": "4799",
+          "name": "Redmi 9C NFC (M2006C3MG)",
+          "url": "https://kaquucomponentes.com/4799-redmi-9c-nfc-m2006c3mg",
+          "part_types": []
+        },
+        {
+          "id": "1337",
+          "name": "Redmi 9AT",
+          "url": "https://kaquucomponentes.com/1337-redmi-9at",
+          "part_types": []
+        },
+        {
+          "id": "827",
+          "name": "Redmi 9A",
+          "url": "https://kaquucomponentes.com/827-redmi-9a",
+          "part_types": []
+        },
+        {
+          "id": "828",
+          "name": "Redmi 9C",
+          "url": "https://kaquucomponentes.com/828-redmi-9c",
+          "part_types": []
+        },
+        {
+          "id": "4912",
+          "name": "Redmi 9 Prime (M2004J19PI)",
+          "url": "https://kaquucomponentes.com/4912-redmi-9-prime-m2004j19pi",
+          "part_types": []
+        },
+        {
+          "id": "835",
+          "name": "Redmi 9",
+          "url": "https://kaquucomponentes.com/835-redmi-9",
+          "part_types": []
+        },
+        {
+          "id": "4514",
+          "name": "Redmi 8A Pro",
+          "url": "https://kaquucomponentes.com/4514-redmi-8a-pro",
+          "part_types": []
+        },
+        {
+          "id": "640",
+          "name": "Redmi 8A",
+          "url": "https://kaquucomponentes.com/640-redmi-8a",
+          "part_types": []
+        },
+        {
+          "id": "641",
+          "name": "Redmi 8",
+          "url": "https://kaquucomponentes.com/641-redmi-8",
+          "part_types": []
+        },
+        {
+          "id": "345",
+          "name": "Redmi 7A",
+          "url": "https://kaquucomponentes.com/345-redmi-7a",
+          "part_types": []
+        },
+        {
+          "id": "327",
+          "name": "Redmi 7",
+          "url": "https://kaquucomponentes.com/327-redmi-7",
+          "part_types": []
+        },
+        {
+          "id": "256",
+          "name": "Redmi 6 Pro",
+          "url": "https://kaquucomponentes.com/256-redmi-6-pro",
+          "part_types": []
+        },
+        {
+          "id": "255",
+          "name": "Redmi 6A",
+          "url": "https://kaquucomponentes.com/255-redmi-6a",
+          "part_types": []
+        },
+        {
+          "id": "257",
+          "name": "Redmi 6",
+          "url": "https://kaquucomponentes.com/257-redmi-6",
+          "part_types": []
+        },
+        {
+          "id": "263",
+          "name": "Redmi 5 Plus",
+          "url": "https://kaquucomponentes.com/263-redmi-5-plus",
+          "part_types": []
+        },
+        {
+          "id": "260",
+          "name": "Redmi 5A",
+          "url": "https://kaquucomponentes.com/260-redmi-5a",
+          "part_types": []
+        },
+        {
+          "id": "264",
+          "name": "Redmi 5",
+          "url": "https://kaquucomponentes.com/264-redmi-5",
+          "part_types": []
+        },
+        {
+          "id": "269",
+          "name": "Redmi 4 Pro",
+          "url": "https://kaquucomponentes.com/269-redmi-4-pro",
+          "part_types": []
+        },
+        {
+          "id": "266",
+          "name": "Redmi 4X",
+          "url": "https://kaquucomponentes.com/266-redmi-4x",
+          "part_types": []
+        },
+        {
+          "id": "270",
+          "name": "Redmi 4 Prime",
+          "url": "https://kaquucomponentes.com/270-redmi-4-prime",
+          "part_types": []
+        },
+        {
+          "id": "267",
+          "name": "Redmi 4A",
+          "url": "https://kaquucomponentes.com/267-redmi-4a",
+          "part_types": []
+        },
+        {
+          "id": "271",
+          "name": "Redmi 4",
+          "url": "https://kaquucomponentes.com/271-redmi-4",
+          "part_types": []
+        },
+        {
+          "id": "556",
+          "name": "Redmi 3X",
+          "url": "https://kaquucomponentes.com/556-redmi-3x",
+          "part_types": []
+        },
+        {
+          "id": "681",
+          "name": "Redmi 3 Pro",
+          "url": "https://kaquucomponentes.com/681-redmi-3-pro",
+          "part_types": []
+        },
+        {
+          "id": "273",
+          "name": "Redmi 3 - 3S",
+          "url": "https://kaquucomponentes.com/273-redmi-3-3s",
+          "part_types": []
+        },
+        {
+          "id": "276",
+          "name": "Redmi 2",
+          "url": "https://kaquucomponentes.com/276-redmi-2",
+          "part_types": []
+        },
+        {
+          "id": "277",
+          "name": "Redmi 1 - 1S",
+          "url": "https://kaquucomponentes.com/277-redmi-1-1s",
+          "part_types": []
+        },
+        {
+          "id": "484",
+          "name": "Redmi Y2",
+          "url": "https://kaquucomponentes.com/484-redmi-y2",
+          "part_types": []
+        },
+        {
+          "id": "693",
+          "name": "Redmi Y1",
+          "url": "https://kaquucomponentes.com/693-redmi-y1",
+          "part_types": []
+        },
+        {
+          "id": "694",
+          "name": "Redmi Y1 Lite",
+          "url": "https://kaquucomponentes.com/694-redmi-y1-lite",
+          "part_types": []
+        },
+        {
+          "id": "274",
+          "name": "Redmi S2",
+          "url": "https://kaquucomponentes.com/274-redmi-s2",
+          "part_types": []
+        },
+        {
+          "id": "253",
+          "name": "Redmi Pro",
+          "url": "https://kaquucomponentes.com/253-redmi-pro",
+          "part_types": []
+        },
+        {
+          "id": "5297",
+          "name": "Redmi K50 Ultra (22081212C)",
+          "url": "https://kaquucomponentes.com/5297-redmi-k50-ultra-22081212c",
+          "part_types": []
+        },
+        {
+          "id": "4824",
+          "name": "Redmi K50",
+          "url": "https://kaquucomponentes.com/4824-redmi-k50",
+          "part_types": []
+        },
+        {
+          "id": "4855",
+          "name": "Redmi K40 Pro (M2012K11C)",
+          "url": "https://kaquucomponentes.com/4855-redmi-k40-pro-m2012k11c",
+          "part_types": []
+        },
+        {
+          "id": "4842",
+          "name": "Redmi K40 (M2012K11AC)",
+          "url": "https://kaquucomponentes.com/4842-redmi-k40-m2012k11ac",
+          "part_types": []
+        },
+        {
+          "id": "1269",
+          "name": "Redmi K30 Pro",
+          "url": "https://kaquucomponentes.com/1269-redmi-k30-pro",
+          "part_types": []
+        },
+        {
+          "id": "4784",
+          "name": "Redmi K30 5G (M2001G7AE, M2001G7AC)",
+          "url": "https://kaquucomponentes.com/4784-redmi-k30-5g-m2001g7ae-m2001g7ac",
+          "part_types": []
+        },
+        {
+          "id": "4847",
+          "name": "Redmi K30 (M1912G7BC)",
+          "url": "https://kaquucomponentes.com/4847-redmi-k30-m1912g7bc",
+          "part_types": []
+        },
+        {
+          "id": "4570",
+          "name": "Redmi K20 Pro (M1903F11I)",
+          "url": "https://kaquucomponentes.com/4570-redmi-k20-pro-m1903f11i",
+          "part_types": []
+        },
+        {
+          "id": "892",
+          "name": "Redmi K20 (M1903F10I)",
+          "url": "https://kaquucomponentes.com/892-redmi-k20-m1903f10i",
+          "part_types": []
+        },
+        {
+          "id": "6721",
+          "name": "Redmi A7 Pro 4G (25128RN17Y)",
+          "url": "https://kaquucomponentes.com/6721-redmi-a7-pro-4g-25128rn17y",
+          "part_types": []
+        },
+        {
+          "id": "6199",
+          "name": "Redmi A5 (25028PC03G)",
+          "url": "https://kaquucomponentes.com/6199-redmi-a5-25028pc03g",
+          "part_types": []
+        },
+        {
+          "id": "7002",
+          "name": "Redmi A4 (24116RNC1I)",
+          "url": "https://kaquucomponentes.com/7002-redmi-a4-24116rnc1i",
+          "part_types": []
+        },
+        {
+          "id": "6264",
+          "name": "Redmi A3x (24048RN6CG)",
+          "url": "https://kaquucomponentes.com/6264-redmi-a3x-24048rn6cg",
+          "part_types": []
+        },
+        {
+          "id": "5472",
+          "name": "Redmi A3 (23129RN51X)",
+          "url": "https://kaquucomponentes.com/5472-redmi-a3-23129rn51x",
+          "part_types": []
+        },
+        {
+          "id": "4958",
+          "name": "Redmi A2 Plus",
+          "url": "https://kaquucomponentes.com/4958-redmi-a2-plus",
+          "part_types": []
+        },
+        {
+          "id": "4957",
+          "name": "Redmi A2",
+          "url": "https://kaquucomponentes.com/4957-redmi-a2",
+          "part_types": []
+        },
+        {
+          "id": "4775",
+          "name": "Redmi A1 Plus 4G",
+          "url": "https://kaquucomponentes.com/4775-redmi-a1-plus-4g",
+          "part_types": []
+        },
+        {
+          "id": "4774",
+          "name": "Redmi A1 (220733SI)",
+          "url": "https://kaquucomponentes.com/4774-redmi-a1-220733si",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Redmi Note": {
+      "id": "5272",
+      "url": "https://kaquucomponentes.com/5272-serie-redmi-note",
+      "models": [
+        {
+          "id": "6666",
+          "name": "Redmi Note 15 Pro Plus 5G (2510ERA8BG)",
+          "url": "https://kaquucomponentes.com/6666-redmi-note-15-pro-plus-5g-2510era8bg",
+          "part_types": []
+        },
+        {
+          "id": "6665",
+          "name": "Redmi Note 15 Pro 5G (25060RABDG)",
+          "url": "https://kaquucomponentes.com/6665-redmi-note-15-pro-5g-25060rabdg",
+          "part_types": []
+        },
+        {
+          "id": "7000",
+          "name": "Redmi Note 15 Pro 4G (25100RA69G)",
+          "url": "https://kaquucomponentes.com/7000-redmi-note-15-pro-4g-25100ra69g",
+          "part_types": []
+        },
+        {
+          "id": "7003",
+          "name": "Redmi Note 15 5G (25096RA9BG 25098RA98G)",
+          "url": "https://kaquucomponentes.com/7003-redmi-note-15-5g-25096ra9bg-25098ra98g",
+          "part_types": []
+        },
+        {
+          "id": "6615",
+          "name": "Redmi Note 15 4G (2510DRA23E)",
+          "url": "https://kaquucomponentes.com/6615-redmi-note-15-4g-2510dra23e",
+          "part_types": []
+        },
+        {
+          "id": "5943",
+          "name": "Redmi Note 14 Pro Plus 5G (24115RA8EG)",
+          "url": "https://kaquucomponentes.com/5943-redmi-note-14-pro-plus-5g-24115ra8eg",
+          "part_types": []
+        },
+        {
+          "id": "5942",
+          "name": "Redmi Note 14 Pro 5G (24090RA29G)",
+          "url": "https://kaquucomponentes.com/5942-redmi-note-14-pro-5g-24090ra29g",
+          "part_types": []
+        },
+        {
+          "id": "5941",
+          "name": "Redmi Note 14 Pro 4G (24116RACCG)",
+          "url": "https://kaquucomponentes.com/5941-redmi-note-14-pro-4g-24116raccg",
+          "part_types": []
+        },
+        {
+          "id": "6263",
+          "name": "Redmi Note 14S (2502FRA65G)",
+          "url": "https://kaquucomponentes.com/6263-redmi-note-14s-2502fra65g",
+          "part_types": []
+        },
+        {
+          "id": "5945",
+          "name": "Redmi Note 14 5G (24094RAD4G)",
+          "url": "https://kaquucomponentes.com/5945-redmi-note-14-5g-24094rad4g",
+          "part_types": []
+        },
+        {
+          "id": "5944",
+          "name": "Redmi Note 14 4G (24117RN76G)",
+          "url": "https://kaquucomponentes.com/5944-redmi-note-14-4g-24117rn76g",
+          "part_types": []
+        },
+        {
+          "id": "5334",
+          "name": "Redmi Note 13 Pro+ 5G (23090RA98C)",
+          "url": "https://kaquucomponentes.com/5334-redmi-note-13-pro-5g-23090ra98c",
+          "part_types": []
+        },
+        {
+          "id": "5425",
+          "name": "Redmi Note 13 Pro 5G (2312DRA50C)",
+          "url": "https://kaquucomponentes.com/5425-redmi-note-13-pro-5g-2312dra50c",
+          "part_types": []
+        },
+        {
+          "id": "6514",
+          "name": "Redmi Note 13R Pro (2311FRAFDC)",
+          "url": "https://kaquucomponentes.com/6514-redmi-note-13r-pro-2311frafdc",
+          "part_types": []
+        },
+        {
+          "id": "5335",
+          "name": "Redmi Note 13 Pro 4G (23117RA68G)",
+          "url": "https://kaquucomponentes.com/5335-redmi-note-13-pro-4g-23117ra68g",
+          "part_types": []
+        },
+        {
+          "id": "5523",
+          "name": "Redmi Note 13 5G (2312DRAABG)",
+          "url": "https://kaquucomponentes.com/5523-redmi-note-13-5g-2312draabg",
+          "part_types": []
+        },
+        {
+          "id": "5336",
+          "name": "Redmi Note 13 4G (23129RAA4G)",
+          "url": "https://kaquucomponentes.com/5336-redmi-note-13-4g-23129raa4g",
+          "part_types": []
+        },
+        {
+          "id": "4991",
+          "name": "Redmi Note 12 Pro+ 5G (22101316UCP)",
+          "url": "https://kaquucomponentes.com/4991-redmi-note-12-pro-5g-22101316ucp",
+          "part_types": []
+        },
+        {
+          "id": "4990",
+          "name": "Redmi Note 12 Pro 5G (22101316C)",
+          "url": "https://kaquucomponentes.com/4990-redmi-note-12-pro-5g-22101316c",
+          "part_types": []
+        },
+        {
+          "id": "4989",
+          "name": "Redmi Note 12 Pro 4G (2209116AG)",
+          "url": "https://kaquucomponentes.com/4989-redmi-note-12-pro-4g-2209116ag",
+          "part_types": []
+        },
+        {
+          "id": "5413",
+          "name": "Redmi Note 12 5G",
+          "url": "https://kaquucomponentes.com/5413-redmi-note-12-5g",
+          "part_types": []
+        },
+        {
+          "id": "4986",
+          "name": "Redmi Note 12 4G (22111317I)",
+          "url": "https://kaquucomponentes.com/4986-redmi-note-12-4g-22111317i",
+          "part_types": []
+        },
+        {
+          "id": "5433",
+          "name": "Redmi Note 12 Turbo (23049RAD8C)",
+          "url": "https://kaquucomponentes.com/5433-redmi-note-12-turbo-23049rad8c",
+          "part_types": []
+        },
+        {
+          "id": "5261",
+          "name": "Redmi Note 12S (2303CRA44A)",
+          "url": "https://kaquucomponentes.com/5261-redmi-note-12s-2303cra44a",
+          "part_types": []
+        },
+        {
+          "id": "5414",
+          "name": "Redmi Note 12R (23076RA4BC)",
+          "url": "https://kaquucomponentes.com/5414-redmi-note-12r-23076ra4bc",
+          "part_types": []
+        },
+        {
+          "id": "4773",
+          "name": "Redmi Note 11T Pro",
+          "url": "https://kaquucomponentes.com/4773-redmi-note-11t-pro",
+          "part_types": []
+        },
+        {
+          "id": "4812",
+          "name": "Redmi Note 11T 5G (21091116AI)",
+          "url": "https://kaquucomponentes.com/4812-redmi-note-11t-5g-21091116ai",
+          "part_types": []
+        },
+        {
+          "id": "4572",
+          "name": "Redmi Note 11S 5G (2201116BG)",
+          "url": "https://kaquucomponentes.com/4572-redmi-note-11s-5g-2201116bg",
+          "part_types": []
+        },
+        {
+          "id": "4496",
+          "name": "Redmi Note 11S 4G 2022 (2201117SY / 2201117SG)",
+          "url": "https://kaquucomponentes.com/4496-redmi-note-11s-4g-2022-2201117sy-2201117sg",
+          "part_types": []
+        },
+        {
+          "id": "4914",
+          "name": "Redmi Note 11E Pro",
+          "url": "https://kaquucomponentes.com/4914-redmi-note-11e-pro",
+          "part_types": []
+        },
+        {
+          "id": "5262",
+          "name": "Redmi note 11E 22041219C",
+          "url": "https://kaquucomponentes.com/5262-redmi-note-11e-22041219c",
+          "part_types": []
+        },
+        {
+          "id": "4513",
+          "name": "Redmi Note 11 Pro+ 5G",
+          "url": "https://kaquucomponentes.com/4513-redmi-note-11-pro-5g",
+          "part_types": []
+        },
+        {
+          "id": "4487",
+          "name": "Redmi Note 11 Pro 5G",
+          "url": "https://kaquucomponentes.com/4487-redmi-note-11-pro-5g",
+          "part_types": []
+        },
+        {
+          "id": "4486",
+          "name": "Redmi Note 11 Pro (2201116TG)",
+          "url": "https://kaquucomponentes.com/4486-redmi-note-11-pro-2201116tg",
+          "part_types": []
+        },
+        {
+          "id": "4489",
+          "name": "Redmi Note 11 NFC (2201117TY)",
+          "url": "https://kaquucomponentes.com/4489-redmi-note-11-nfc-2201117ty",
+          "part_types": []
+        },
+        {
+          "id": "4482",
+          "name": "Redmi Note 11 5G (21091116AC)",
+          "url": "https://kaquucomponentes.com/4482-redmi-note-11-5g-21091116ac",
+          "part_types": []
+        },
+        {
+          "id": "4568",
+          "name": "Redmi Note 11 4G Global (2201117TG)",
+          "url": "https://kaquucomponentes.com/4568-redmi-note-11-4g-global-2201117tg",
+          "part_types": []
+        },
+        {
+          "id": "4488",
+          "name": "Redmi Note 11 4G 2022",
+          "url": "https://kaquucomponentes.com/4488-redmi-note-11-4g-2022",
+          "part_types": []
+        },
+        {
+          "id": "4851",
+          "name": "Redmi Note 10T 5G (M2103K19I)",
+          "url": "https://kaquucomponentes.com/4851-redmi-note-10t-5g-m2103k19i",
+          "part_types": []
+        },
+        {
+          "id": "1140",
+          "name": "Redmi Note 10S",
+          "url": "https://kaquucomponentes.com/1140-redmi-note-10s",
+          "part_types": []
+        },
+        {
+          "id": "4849",
+          "name": "Redmi Note 10 Pro Max",
+          "url": "https://kaquucomponentes.com/4849-redmi-note-10-pro-max",
+          "part_types": []
+        },
+        {
+          "id": "4769",
+          "name": "Redmi Note 10 Pro 5G",
+          "url": "https://kaquucomponentes.com/4769-redmi-note-10-pro-5g",
+          "part_types": []
+        },
+        {
+          "id": "1206",
+          "name": "Redmi Note 10 Pro (M2101K6G)",
+          "url": "https://kaquucomponentes.com/1206-redmi-note-10-pro-m2101k6g",
+          "part_types": []
+        },
+        {
+          "id": "1139",
+          "name": "Redmi Note 10 5G",
+          "url": "https://kaquucomponentes.com/1139-redmi-note-10-5g",
+          "part_types": []
+        },
+        {
+          "id": "927",
+          "name": "Redmi Note 10 (M2101K7AI)",
+          "url": "https://kaquucomponentes.com/927-redmi-note-10-m2101k7ai",
+          "part_types": []
+        },
+        {
+          "id": "1369",
+          "name": "Redmi Note 9T",
+          "url": "https://kaquucomponentes.com/1369-redmi-note-9t",
+          "part_types": []
+        },
+        {
+          "id": "809",
+          "name": "Redmi Note 9S",
+          "url": "https://kaquucomponentes.com/809-redmi-note-9s",
+          "part_types": []
+        },
+        {
+          "id": "4815",
+          "name": "Redmi Note 9 Pro Max",
+          "url": "https://kaquucomponentes.com/4815-redmi-note-9-pro-max",
+          "part_types": []
+        },
+        {
+          "id": "4569",
+          "name": "Redmi Note 9 Pro 5G (M2007J17C)",
+          "url": "https://kaquucomponentes.com/4569-redmi-note-9-pro-5g-m2007j17c",
+          "part_types": []
+        },
+        {
+          "id": "810",
+          "name": "Redmi Note 9 Pro",
+          "url": "https://kaquucomponentes.com/810-redmi-note-9-pro",
+          "part_types": []
+        },
+        {
+          "id": "1468",
+          "name": "Redmi Note 9 5G",
+          "url": "https://kaquucomponentes.com/1468-redmi-note-9-5g",
+          "part_types": []
+        },
+        {
+          "id": "813",
+          "name": "Redmi Note 9",
+          "url": "https://kaquucomponentes.com/813-redmi-note-9",
+          "part_types": []
+        },
+        {
+          "id": "585",
+          "name": "Redmi Note 8T",
+          "url": "https://kaquucomponentes.com/585-redmi-note-8t",
+          "part_types": []
+        },
+        {
+          "id": "398",
+          "name": "Redmi Note 8 Pro",
+          "url": "https://kaquucomponentes.com/398-redmi-note-8-pro",
+          "part_types": []
+        },
+        {
+          "id": "5173",
+          "name": "Redmi Note 8 2021 (M1908C3JH)",
+          "url": "https://kaquucomponentes.com/5173-redmi-note-8-2021-m1908c3jh",
+          "part_types": []
+        },
+        {
+          "id": "397",
+          "name": "Redmi Note 8",
+          "url": "https://kaquucomponentes.com/397-redmi-note-8",
+          "part_types": []
+        },
+        {
+          "id": "4939",
+          "name": "Redmi Note 7s (M1901F71)",
+          "url": "https://kaquucomponentes.com/4939-redmi-note-7s-m1901f71",
+          "part_types": []
+        },
+        {
+          "id": "505",
+          "name": "Redmi Note 7 Pro",
+          "url": "https://kaquucomponentes.com/505-redmi-note-7-pro",
+          "part_types": []
+        },
+        {
+          "id": "252",
+          "name": "Redmi Note 7",
+          "url": "https://kaquucomponentes.com/252-redmi-note-7",
+          "part_types": []
+        },
+        {
+          "id": "254",
+          "name": "Redmi Note 6 Pro",
+          "url": "https://kaquucomponentes.com/254-redmi-note-6-pro",
+          "part_types": []
+        },
+        {
+          "id": "454",
+          "name": "Redmi Note 6",
+          "url": "https://kaquucomponentes.com/454-redmi-note-6",
+          "part_types": []
+        },
+        {
+          "id": "261",
+          "name": "Redmi Note 5 Pro",
+          "url": "https://kaquucomponentes.com/261-redmi-note-5-pro",
+          "part_types": []
+        },
+        {
+          "id": "258",
+          "name": "Redmi Note 5A Prime",
+          "url": "https://kaquucomponentes.com/258-redmi-note-5a-prime",
+          "part_types": []
+        },
+        {
+          "id": "692",
+          "name": "Redmi Note 5A Pro",
+          "url": "https://kaquucomponentes.com/692-redmi-note-5a-pro",
+          "part_types": []
+        },
+        {
+          "id": "259",
+          "name": "Redmi Note 5A",
+          "url": "https://kaquucomponentes.com/259-redmi-note-5a",
+          "part_types": []
+        },
+        {
+          "id": "262",
+          "name": "Redmi Note 5",
+          "url": "https://kaquucomponentes.com/262-redmi-note-5",
+          "part_types": []
+        },
+        {
+          "id": "265",
+          "name": "Redmi Note 4X",
+          "url": "https://kaquucomponentes.com/265-redmi-note-4x",
+          "part_types": []
+        },
+        {
+          "id": "806",
+          "name": "Redmi Note 4 Pro",
+          "url": "https://kaquucomponentes.com/806-redmi-note-4-pro",
+          "part_types": []
+        },
+        {
+          "id": "268",
+          "name": "Redmi Note 4",
+          "url": "https://kaquucomponentes.com/268-redmi-note-4",
+          "part_types": []
+        },
+        {
+          "id": "272",
+          "name": "Redmi Note 3 Pro",
+          "url": "https://kaquucomponentes.com/272-redmi-note-3-pro",
+          "part_types": []
+        },
+        {
+          "id": "287",
+          "name": "Redmi Note 3",
+          "url": "https://kaquucomponentes.com/287-redmi-note-3",
+          "part_types": []
+        },
+        {
+          "id": "275",
+          "name": "Redmi Note 2",
+          "url": "https://kaquucomponentes.com/275-redmi-note-2",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Poco": {
+      "id": "1045",
+      "url": "https://kaquucomponentes.com/1045-serie-poco",
+      "models": [
+        {
+          "id": "6712",
+          "name": "Poco F8 Pro (2510DPC44G)",
+          "url": "https://kaquucomponentes.com/6712-poco-f8-pro-2510dpc44g",
+          "part_types": []
+        },
+        {
+          "id": "6716",
+          "name": "Poco F8 Ultra (25102PCBEG)",
+          "url": "https://kaquucomponentes.com/6716-poco-f8-ultra-25102pcbeg",
+          "part_types": []
+        },
+        {
+          "id": "6176",
+          "name": "Poco F7 Ultra (24122RKC7G)",
+          "url": "https://kaquucomponentes.com/6176-poco-f7-ultra-24122rkc7g",
+          "part_types": []
+        },
+        {
+          "id": "6175",
+          "name": "Poco F7 Pro",
+          "url": "https://kaquucomponentes.com/6175-poco-f7-pro",
+          "part_types": []
+        },
+        {
+          "id": "6535",
+          "name": "Poco F7 (25053PC47G)",
+          "url": "https://kaquucomponentes.com/6535-poco-f7-25053pc47g",
+          "part_types": []
+        },
+        {
+          "id": "5803",
+          "name": "Poco F6 Pro (MZB0HBBEU)",
+          "url": "https://kaquucomponentes.com/5803-poco-f6-pro-mzb0hbbeu",
+          "part_types": []
+        },
+        {
+          "id": "5733",
+          "name": "Poco F6 (24069PC21G)",
+          "url": "https://kaquucomponentes.com/5733-poco-f6-24069pc21g",
+          "part_types": []
+        },
+        {
+          "id": "5734",
+          "name": "Poco F5 Pro (23013PC75G )",
+          "url": "https://kaquucomponentes.com/5734-poco-f5-pro-23013pc75g-",
+          "part_types": []
+        },
+        {
+          "id": "5420",
+          "name": "Poco F5 (23049PCD8G)",
+          "url": "https://kaquucomponentes.com/5420-poco-f5-23049pcd8g",
+          "part_types": []
+        },
+        {
+          "id": "4595",
+          "name": "Poco F4 GT (21121210G)",
+          "url": "https://kaquucomponentes.com/4595-poco-f4-gt-21121210g",
+          "part_types": []
+        },
+        {
+          "id": "4591",
+          "name": "Poco F4 (22021211RG)",
+          "url": "https://kaquucomponentes.com/4591-poco-f4-22021211rg",
+          "part_types": []
+        },
+        {
+          "id": "4500",
+          "name": "Poco F3",
+          "url": "https://kaquucomponentes.com/4500-poco-f3",
+          "part_types": []
+        },
+        {
+          "id": "1230",
+          "name": "Poco F2 Pro",
+          "url": "https://kaquucomponentes.com/1230-poco-f2-pro",
+          "part_types": []
+        },
+        {
+          "id": "280",
+          "name": "Poco F1",
+          "url": "https://kaquucomponentes.com/280-poco-f1",
+          "part_types": []
+        },
+        {
+          "id": "7015",
+          "name": "Poco X8 Pro Max  (2602BPC18G)",
+          "url": "https://kaquucomponentes.com/7015-poco-x8-pro-max-2602bpc18g",
+          "part_types": []
+        },
+        {
+          "id": "7016",
+          "name": "Poco X8 Pro (2511FPC34G)",
+          "url": "https://kaquucomponentes.com/7016-poco-x8-pro-2511fpc34g",
+          "part_types": []
+        },
+        {
+          "id": "5946",
+          "name": "Poco X7 Pro (2412DPC0AG)",
+          "url": "https://kaquucomponentes.com/5946-poco-x7-pro-2412dpc0ag",
+          "part_types": []
+        },
+        {
+          "id": "5947",
+          "name": "Poco X7 (24095PCADG)",
+          "url": "https://kaquucomponentes.com/5947-poco-x7-24095pcadg",
+          "part_types": []
+        },
+        {
+          "id": "6513",
+          "name": "Poco X6 Neo (2312FRAFDI)",
+          "url": "https://kaquucomponentes.com/6513-poco-x6-neo-2312frafdi",
+          "part_types": []
+        },
+        {
+          "id": "5680",
+          "name": "Poco X6 Pro (2311DRK48G)",
+          "url": "https://kaquucomponentes.com/5680-poco-x6-pro-2311drk48g",
+          "part_types": []
+        },
+        {
+          "id": "5424",
+          "name": "Poco X6 5G (23122PCD1G)",
+          "url": "https://kaquucomponentes.com/5424-poco-x6-5g-23122pcd1g",
+          "part_types": []
+        },
+        {
+          "id": "4988",
+          "name": "Poco X5 Pro (2101320G)",
+          "url": "https://kaquucomponentes.com/4988-poco-x5-pro-2101320g",
+          "part_types": []
+        },
+        {
+          "id": "4987",
+          "name": "Poco X5 5G (22111317PG)",
+          "url": "https://kaquucomponentes.com/4987-poco-x5-5g-22111317pg",
+          "part_types": []
+        },
+        {
+          "id": "4589",
+          "name": "Poco X4 Pro 5G (2201116PG)",
+          "url": "https://kaquucomponentes.com/4589-poco-x4-pro-5g-2201116pg",
+          "part_types": []
+        },
+        {
+          "id": "4772",
+          "name": "Poco X4 GT 5G (22041216G)",
+          "url": "https://kaquucomponentes.com/4772-poco-x4-gt-5g-22041216g",
+          "part_types": []
+        },
+        {
+          "id": "4791",
+          "name": "Poco X4",
+          "url": "https://kaquucomponentes.com/4791-poco-x4",
+          "part_types": []
+        },
+        {
+          "id": "4546",
+          "name": "Poco X3 NFC",
+          "url": "https://kaquucomponentes.com/4546-poco-x3-nfc",
+          "part_types": []
+        },
+        {
+          "id": "1254",
+          "name": "Poco X3 Pro",
+          "url": "https://kaquucomponentes.com/1254-poco-x3-pro",
+          "part_types": []
+        },
+        {
+          "id": "4781",
+          "name": "Poco X3 GT (21061110AG)",
+          "url": "https://kaquucomponentes.com/4781-poco-x3-gt-21061110ag",
+          "part_types": []
+        },
+        {
+          "id": "908",
+          "name": "Poco X3",
+          "url": "https://kaquucomponentes.com/908-poco-x3",
+          "part_types": []
+        },
+        {
+          "id": "7018",
+          "name": "Poco M8 Pro 5G (2510EPC8BG)",
+          "url": "https://kaquucomponentes.com/7018-poco-m8-pro-5g-2510epc8bg",
+          "part_types": []
+        },
+        {
+          "id": "7019",
+          "name": "Poco M8 5G (25118PC98G)",
+          "url": "https://kaquucomponentes.com/7019-poco-m8-5g-25118pc98g",
+          "part_types": []
+        },
+        {
+          "id": "6065",
+          "name": "Poco M7 Pro 5G (2409FPCC4G)",
+          "url": "https://kaquucomponentes.com/6065-poco-m7-pro-5g-2409fpcc4g",
+          "part_types": []
+        },
+        {
+          "id": "6673",
+          "name": "Poco M7 Plus",
+          "url": "https://kaquucomponentes.com/6673-poco-m7-plus",
+          "part_types": []
+        },
+        {
+          "id": "6240",
+          "name": "Poco M7 4G (25062PC34E)",
+          "url": "https://kaquucomponentes.com/6240-poco-m7-4g-25062pc34e",
+          "part_types": []
+        },
+        {
+          "id": "5415",
+          "name": "Poco M6 Pro 5G (23076PC4BI)",
+          "url": "https://kaquucomponentes.com/5415-poco-m6-pro-5g-23076pc4bi",
+          "part_types": []
+        },
+        {
+          "id": "5423",
+          "name": "Poco M6 Pro 4G (2312FPCA6G)",
+          "url": "https://kaquucomponentes.com/5423-poco-m6-pro-4g-2312fpca6g",
+          "part_types": []
+        },
+        {
+          "id": "5681",
+          "name": "Poco M6 4G (2404APC5FG)",
+          "url": "https://kaquucomponentes.com/5681-poco-m6-4g-2404apc5fg",
+          "part_types": []
+        },
+        {
+          "id": "5259",
+          "name": "Poco M5s (2207117BPG)",
+          "url": "https://kaquucomponentes.com/5259-poco-m5s-2207117bpg",
+          "part_types": []
+        },
+        {
+          "id": "4795",
+          "name": "Poco M5 (22071219CG)",
+          "url": "https://kaquucomponentes.com/4795-poco-m5-22071219cg",
+          "part_types": []
+        },
+        {
+          "id": "4484",
+          "name": "Poco M4 Pro 5G (21091116AG)",
+          "url": "https://kaquucomponentes.com/4484-poco-m4-pro-5g-21091116ag",
+          "part_types": []
+        },
+        {
+          "id": "4558",
+          "name": "Poco M4 Pro 4G (2201117PG)",
+          "url": "https://kaquucomponentes.com/4558-poco-m4-pro-4g-2201117pg",
+          "part_types": []
+        },
+        {
+          "id": "4794",
+          "name": "Poco M4 5G",
+          "url": "https://kaquucomponentes.com/4794-poco-m4-5g",
+          "part_types": []
+        },
+        {
+          "id": "1138",
+          "name": "Poco M3 Pro 5G",
+          "url": "https://kaquucomponentes.com/1138-poco-m3-pro-5g",
+          "part_types": []
+        },
+        {
+          "id": "974",
+          "name": "Poco M3",
+          "url": "https://kaquucomponentes.com/974-poco-m3",
+          "part_types": []
+        },
+        {
+          "id": "1046",
+          "name": "Poco M2 Pro (M2003J6Ci)",
+          "url": "https://kaquucomponentes.com/1046-poco-m2-pro-m2003j6ci",
+          "part_types": []
+        },
+        {
+          "id": "4954",
+          "name": "Poco M2 (MZB9919IN)",
+          "url": "https://kaquucomponentes.com/4954-poco-m2-mzb9919in",
+          "part_types": []
+        },
+        {
+          "id": "6564",
+          "name": "Poco C85 5G",
+          "url": "https://kaquucomponentes.com/6564-poco-c85-5g",
+          "part_types": []
+        },
+        {
+          "id": "6713",
+          "name": "Poco C85 4G (25078PC3EE)",
+          "url": "https://kaquucomponentes.com/6713-poco-c85-4g-25078pc3ee",
+          "part_types": []
+        },
+        {
+          "id": "5926",
+          "name": "Poco C75 (2410FPCC5G)",
+          "url": "https://kaquucomponentes.com/5926-poco-c75-2410fpcc5g",
+          "part_types": []
+        },
+        {
+          "id": "7485",
+          "name": "Poco C71 (25028PC03I)",
+          "url": "https://kaquucomponentes.com/7485-poco-c71-25028pc03i",
+          "part_types": []
+        },
+        {
+          "id": "5475",
+          "name": "Poco C65 (2310FPCA4G)",
+          "url": "https://kaquucomponentes.com/5475-poco-c65-2310fpca4g",
+          "part_types": []
+        },
+        {
+          "id": "6265",
+          "name": "Poco C61 (2312BPC51H)",
+          "url": "https://kaquucomponentes.com/6265-poco-c61-2312bpc51h",
+          "part_types": []
+        },
+        {
+          "id": "5735",
+          "name": "Poco C51 (MZB0E6DIN)",
+          "url": "https://kaquucomponentes.com/5735-poco-c51-mzb0e6din",
+          "part_types": []
+        },
+        {
+          "id": "4961",
+          "name": "Poco C40 (220333QPG 220333QPI)",
+          "url": "https://kaquucomponentes.com/4961-poco-c40-220333qpg-220333qpi",
+          "part_types": []
+        },
+        {
+          "id": "4962",
+          "name": "Poco C3",
+          "url": "https://kaquucomponentes.com/4962-poco-c3",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Black Shark": {
+      "id": "5271",
+      "url": "https://kaquucomponentes.com/5271-serie-black-shark",
+      "models": [
+        {
+          "id": "6051",
+          "name": "Black Shark 5 Pro (KTUS-H0)",
+          "url": "https://kaquucomponentes.com/6051-black-shark-5-pro-ktus-h0",
+          "part_types": []
+        },
+        {
+          "id": "6050",
+          "name": "Black Shark 5 (PAR-A0)",
+          "url": "https://kaquucomponentes.com/6050-black-shark-5-par-a0",
+          "part_types": []
+        },
+        {
+          "id": "5526",
+          "name": "Black Shark 4S",
+          "url": "https://kaquucomponentes.com/5526-black-shark-4s",
+          "part_types": []
+        },
+        {
+          "id": "5525",
+          "name": "Black Shark 4 Pro (SHARK PAR-H0)",
+          "url": "https://kaquucomponentes.com/5525-black-shark-4-pro-shark-par-h0",
+          "part_types": []
+        },
+        {
+          "id": "5524",
+          "name": "Black Shark 4 (SHARK PRS-H0)",
+          "url": "https://kaquucomponentes.com/5524-black-shark-4-shark-prs-h0",
+          "part_types": []
+        },
+        {
+          "id": "917",
+          "name": "Black Shark 3",
+          "url": "https://kaquucomponentes.com/917-black-shark-3",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Xiaomi Pad": {
+      "id": "5275",
+      "url": "https://kaquucomponentes.com/5275-serie-xiaomi-pad",
+      "models": [
+        {
+          "id": "6722",
+          "name": "Xiaomi Pad 8 Pro (25097RP43G)",
+          "url": "https://kaquucomponentes.com/6722-xiaomi-pad-8-pro-25097rp43g",
+          "part_types": []
+        },
+        {
+          "id": "6165",
+          "name": "Xiaomi Pad 7 Pro",
+          "url": "https://kaquucomponentes.com/6165-xiaomi-pad-7-pro",
+          "part_types": []
+        },
+        {
+          "id": "7008",
+          "name": "Xiaomi Pad 7 (2410CRP4CG)",
+          "url": "https://kaquucomponentes.com/7008-xiaomi-pad-7-2410crp4cg",
+          "part_types": []
+        },
+        {
+          "id": "6164",
+          "name": "Xiaomi Pad 6S Pro (24018RPACG)",
+          "url": "https://kaquucomponentes.com/6164-xiaomi-pad-6s-pro-24018rpacg",
+          "part_types": []
+        },
+        {
+          "id": "6162",
+          "name": "Xiaomi Pad 6 Pro (23046RP50C)",
+          "url": "https://kaquucomponentes.com/6162-xiaomi-pad-6-pro-23046rp50c",
+          "part_types": []
+        },
+        {
+          "id": "5456",
+          "name": "Xiaomi Pad 6 (23043RP34G)",
+          "url": "https://kaquucomponentes.com/5456-xiaomi-pad-6-23043rp34g",
+          "part_types": []
+        },
+        {
+          "id": "4858",
+          "name": "Xiaomi Pad 5 (21051182G)",
+          "url": "https://kaquucomponentes.com/4858-xiaomi-pad-5-21051182g",
+          "part_types": []
+        },
+        {
+          "id": "819",
+          "name": "Xiaomi Pad 4 Plus",
+          "url": "https://kaquucomponentes.com/819-xiaomi-pad-4-plus",
+          "part_types": []
+        },
+        {
+          "id": "764",
+          "name": "Xiaomi Pad 4",
+          "url": "https://kaquucomponentes.com/764-xiaomi-pad-4",
+          "part_types": []
+        },
+        {
+          "id": "765",
+          "name": "Xiaomi Pad 3",
+          "url": "https://kaquucomponentes.com/765-xiaomi-pad-3",
+          "part_types": []
+        },
+        {
+          "id": "763",
+          "name": "Xiaomi Pad 2",
+          "url": "https://kaquucomponentes.com/763-xiaomi-pad-2",
+          "part_types": []
+        },
+        {
+          "id": "482",
+          "name": "Xiaomi Pad 1",
+          "url": "https://kaquucomponentes.com/482-xiaomi-pad-1",
+          "part_types": []
+        }
+      ]
+    },
+    "Serie Redmi Pad": {
+      "id": "5482",
+      "url": "https://kaquucomponentes.com/5482-serie-redmi-pad",
+      "models": [
+        {
+          "id": "6266",
+          "name": "Xiaomi Redmi Pad SE 8.7 (220233L2G)",
+          "url": "https://kaquucomponentes.com/6266-xiaomi-redmi-pad-se-87-220233l2g",
+          "part_types": []
+        },
+        {
+          "id": "5690",
+          "name": "Xiaomi Redmi Pad SE (23073RPBFG)",
+          "url": "https://kaquucomponentes.com/5690-xiaomi-redmi-pad-se-23073rpbfg",
+          "part_types": []
+        },
+        {
+          "id": "5481",
+          "name": "Xiaomi Redmi Pad 2022 (22081283G)",
+          "url": "https://kaquucomponentes.com/5481-xiaomi-redmi-pad-2022-22081283g",
+          "part_types": []
+        }
+      ]
+    }
   }
 }
