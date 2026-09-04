@@ -89,14 +89,22 @@ skipped entirely (useful for local dev only — always set it in Vercel).
 
 ## Deploying (GitHub → Vercel)
 
-1. Push this repo to GitHub.
-2. Import the repo in Vercel.
-3. Add the **Postgres** storage integration in the Vercel project (Storage
-   tab) if you haven't already — it sets `DATABASE_URL`/`DIRECT_URL`
-   automatically for all environments.
-4. Add a `SITE_PASSWORD` environment variable in the Vercel project settings
+The GitHub repo is already set up: https://github.com/adnanestate/ifix-spare-part-inventory (private).
+
+1. In Vercel, **Add New → Project** and import that repo.
+2. Pick your database — either works, the app doesn't care which:
+   - **Vercel Postgres** (Storage tab → Create Database → Postgres) — sets
+     `DATABASE_URL`/`DIRECT_URL` automatically for all environments.
+   - **Supabase** — create a project, then in Supabase go to
+     **Project Settings → Database → Connection string** and copy the
+     **URI** (pooled, "Transaction" mode, port 6543) into `DATABASE_URL`
+     and the **direct** connection (port 5432) into `DIRECT_URL`, both as
+     Vercel environment variables. Supabase's Postgres supports the
+     `unaccent` extension this app uses, same as Vercel Postgres/Neon — no
+     code changes either way.
+3. Add a `SITE_PASSWORD` environment variable in the Vercel project settings
    (Production, and Preview if you want previews gated too).
-5. Deploy. On the first deploy, run the schema + seed once against the
+4. Deploy. On the first deploy, run the schema + seed once against the
    production database:
 
    ```bash
