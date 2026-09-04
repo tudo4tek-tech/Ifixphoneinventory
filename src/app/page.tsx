@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
-import { slugify } from "@/lib/slug";
+import ItemListRow from "@/components/ItemListRow";
 
 export const dynamic = "force-dynamic";
+
+const PREVIEW_COUNT = 8;
 
 export default async function HomePage() {
   const brands = await prisma.brand.findMany({
@@ -10,17 +12,26 @@ export default async function HomePage() {
     include: { _count: { select: { lines: true } } },
   });
 
-  const [totalItems, lowStockRows, totalUnits] = await Promise.all([
+  const [totalItems, lowStockRows, totalUnits, inStockCount, inStockItems] = await Promise.all([
     prisma.inventoryItem.count(),
     prisma.$queryRaw<{ id: string }[]>`
       SELECT id FROM "InventoryItem" WHERE quantity <= "lowStockThreshold"
     `,
     prisma.inventoryItem.aggregate({ _sum: { quantity: true } }),
+    prisma.inventoryItem.count({ where: { quantity: { gt: 0 } } }),
+    prisma.inventoryItem.findMany({
+      where: { quantity: { gt: 0 } },
+      orderBy: { updatedAt: "desc" },
+      take: PREVIEW_COUNT,
+      include: {
+        partCategory: { include: { model: { include: { deviceLine: { include: { brand: true } } } } } },
+      },
+    }),
   ]);
   const lowStockCount = lowStockRows.length;
 
   const lowStockItems = await prisma.inventoryItem.findMany({
-    where: { id: { in: lowStockRows.slice(0, 8).map((r) => r.id) } },
+    where: { id: { in: lowStockRows.slice(0, PREVIEW_COUNT).map((r) => r.id) } },
     orderBy: { quantity: "asc" },
     include: {
       partCategory: { include: { model: { include: { deviceLine: { include: { brand: true } } } } } },
@@ -53,43 +64,32 @@ export default async function HomePage() {
 
       <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <StatCard label="Total parts tracked" value={totalItems.toLocaleString()} />
-        <StatCard label="Total units in stock" value={(totalUnits._sum.quantity ?? 0).toLocaleString()} />
+        <StatCard label="Total units in stock" value={(totalUnits._sum.quantity ?? 0).toLocaleString()} href="/in-stock" />
         <StatCard
           label="Low stock parts"
           value={lowStockCount.toLocaleString()}
           accent={lowStockCount > 0 ? "warn" : undefined}
+          href="/low-stock"
         />
       </section>
 
-      {lowStockItems.length > 0 && (
-        <section>
-          <h2 className="text-lg font-semibold mb-3">Low stock</h2>
-          <div className="rounded-lg border border-black/10 dark:border-white/15 divide-y divide-black/10 dark:divide-white/10">
-            {lowStockItems.map((item) => {
-              const m = item.partCategory.model;
-              const line = m.deviceLine;
-              const brand = line.brand;
-              return (
-                <Link
-                  key={item.id}
-                  href={`/brand/${brand.slug}/${line.slug}/${m.slug}/${slugify(item.partCategory.name)}`}
-                  className="flex items-center justify-between px-4 py-3 hover:bg-black/[0.03] dark:hover:bg-white/[0.03] text-sm"
-                >
-                  <div>
-                    <div className="font-medium">{item.name}</div>
-                    <div className="text-black/50 dark:text-white/50">
-                      {brand.name} / {line.name} / {m.name} / {item.partCategory.name}
-                    </div>
-                  </div>
-                  <span className="text-red-600 dark:text-red-400 font-semibold">
-                    {item.quantity} left
-                  </span>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-      )}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <StockPanel
+          title="In Stock"
+          count={inStockCount}
+          href="/in-stock"
+          items={inStockItems}
+          emptyText="Nothing in stock yet. Add quantities from any part's page."
+        />
+        <StockPanel
+          title="Low Stock"
+          count={lowStockCount}
+          href="/low-stock"
+          items={lowStockItems}
+          emptyText="Nothing is low on stock."
+          accent="warn"
+        />
+      </section>
     </div>
   );
 }
@@ -98,13 +98,19 @@ function StatCard({
   label,
   value,
   accent,
+  href,
 }: {
   label: string;
   value: string;
   accent?: "warn";
+  href?: string;
 }) {
-  return (
-    <div className="rounded-lg border border-black/10 dark:border-white/15 p-4">
+  const body = (
+    <div
+      className={`rounded-lg border border-black/10 dark:border-white/15 p-4 h-full ${
+        href ? "hover:border-blue-500 hover:shadow-sm transition" : ""
+      }`}
+    >
       <div className="text-sm text-black/50 dark:text-white/50">{label}</div>
       <div
         className={`text-2xl font-semibold ${
@@ -114,5 +120,55 @@ function StatCard({
         {value}
       </div>
     </div>
+  );
+  return href ? <Link href={href}>{body}</Link> : body;
+}
+
+function StockPanel({
+  title,
+  count,
+  href,
+  items,
+  emptyText,
+  accent,
+}: {
+  title: string;
+  count: number;
+  href: string;
+  items: Parameters<typeof ItemListRow>[0]["item"][];
+  emptyText: string;
+  accent?: "warn";
+}) {
+  return (
+    <section>
+      <div className="flex items-baseline justify-between mb-3">
+        <Link href={href} className="group flex items-baseline gap-2 hover:underline">
+          <h2 className="text-lg font-semibold">{title}</h2>
+          <span
+            className={`text-sm ${
+              accent === "warn" && count > 0
+                ? "text-red-600 dark:text-red-400 font-semibold"
+                : "text-black/50 dark:text-white/50"
+            }`}
+          >
+            ({count.toLocaleString()})
+          </span>
+        </Link>
+        {count > items.length && (
+          <Link href={href} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+            View all
+          </Link>
+        )}
+      </div>
+      {items.length === 0 ? (
+        <p className="text-black/50 dark:text-white/50 text-sm">{emptyText}</p>
+      ) : (
+        <div className="rounded-lg border border-black/10 dark:border-white/15 divide-y divide-black/10 dark:divide-white/10">
+          {items.map((item) => (
+            <ItemListRow key={item.id} item={item} />
+          ))}
+        </div>
+      )}
+    </section>
   );
 }

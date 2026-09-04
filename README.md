@@ -63,11 +63,21 @@ skipped entirely (useful for local dev only — always set it in Vercel).
 
 4. **Seed the catalog** (brands, device lines, models, part categories, and
    the scraped starting part list — reads `data/categories_tree.json` and
-   `data/products_raw.json`):
+   `data/products_raw.json`, translating the scraped Spanish text to
+   English via `prisma/translate.ts` on the way in):
 
    ```bash
    npm run db:seed
    ```
+
+   **Note:** the seed script clears and reloads the whole catalog every
+   run (`Brand`/`DeviceLine`/`Model`/`PartCategory`/`InventoryItem` tables
+   are wiped first, then rebuilt from `data/*.json`). This keeps re-seeding
+   simple after adding a brand or improving the translation dictionary, but
+   it means **your own stock quantities, cost/sell prices, supplier and
+   notes are NOT preserved across a re-seed** — treat `npm run db:seed` as
+   a catalog-structure refresh, not something to run casually once you're
+   tracking real stock.
 
 5. **Run the app**
 
@@ -95,15 +105,25 @@ skipped entirely (useful for local dev only — always set it in Vercel).
    DATABASE_URL=... npm run db:seed   # or run against .env.production.local
    ```
 
-   (Only needs to be done once — `prisma migrate deploy` is safe to re-run
-   on later deploys as the schema evolves; re-running the seed is safe too,
-   it skips products it has already imported.)
+   (`prisma migrate deploy` is safe to re-run on later deploys as the
+   schema evolves. The seed is **not** safe to casually re-run once real
+   stock data exists — see the warning above.)
 
 ## Re-scraping / extending the catalog
 
 `scripts/scrape.py` (Python) crawls the source site's category tree and
-product listings. It's scoped to Apple + Samsung by editing the `ROOTS`
-dict at the top of the file — add another brand's root category URL there
-to extend coverage. Re-run it, then re-run `npm run db:seed` (it upserts
-brands/lines/models/categories and skips products it already knows about
-via their scraped source product ID, so it's safe to re-run).
+product listings. It currently covers Apple, Samsung, Xiaomi, and Oppo via
+the `ROOTS` dict at the top of the file — add another brand's root
+category URL there to extend coverage, or scrape a new brand in isolation
+(temporary `ROOTS` override + separate output dir) and merge its
+`categories_tree.json`/`products_raw.json` into `data/` to avoid
+re-scraping brands already done. Either way, re-running `npm run db:seed`
+afterward wipes and rebuilds the whole catalog from `data/*.json` — fine
+before you're tracking real stock, but back up your `InventoryItem` table
+first if you're not.
+
+Spanish → English translation happens in `prisma/translate.ts` at seed
+time (a phrase dictionary, then a ~200-word dictionary, applied to product
+names, device line names, and part category names). It's a best-effort
+rule-based translation, not a translation API — if you spot a term it
+missed, add it to the dictionary in that file and re-seed.
