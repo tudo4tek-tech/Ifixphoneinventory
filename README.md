@@ -49,6 +49,23 @@ add it manually via "Enter a setup key" using the printed secret. Once
 `SITE_TOTP_SECRET` is set, the login page requires both the password and
 a valid 6-digit code; leave it unset to keep password-only login.
 
+**Changing the password (and forcing every device to log out):** the
+session cookie is derived from the password itself, so changing it
+instantly invalidates every existing login everywhere — no separate
+"log out all devices" step needed. To change it, no code or CLI required:
+
+1. In the [Vercel dashboard](https://vercel.com), open this project →
+   **Settings → Environment Variables**.
+2. Find `SITE_PASSWORD`, edit it, and save the new value (same steps for
+   `SITE_TOTP_SECRET` if you ever want to rotate the authenticator secret
+   instead).
+3. Environment variable changes don't apply to an already-running
+   deployment on their own — go to the **Deployments** tab, open the
+   current production deployment's **⋯** menu, and choose **Redeploy**.
+   No new code is needed; this just restarts the app with the new value.
+4. Everyone (including you) will need the new password on their next
+   visit — every existing session is invalidated automatically.
+
 ## Local setup
 
 1. **Install dependencies**
