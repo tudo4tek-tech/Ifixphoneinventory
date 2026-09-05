@@ -1,6 +1,17 @@
-import { PrismaClient } from "@prisma/client";
 import fs from "node:fs";
 import path from "node:path";
+import { randomUUID } from "node:crypto";
+
+// tsx does not auto-load .env, and neither does @prisma/client -- load it
+// explicitly so `npm run db:seed` works the same locally as it does when
+// DATABASE_URL is injected directly (e.g. by Vercel, with no .env file).
+try {
+  process.loadEnvFile();
+} catch {
+  // no .env file present -- fine if DATABASE_URL is already in the env.
+}
+
+import { PrismaClient, Prisma } from "@prisma/client";
 import { translateText, translateLineName, translateModelName } from "./translate";
 import { classifyCategory, CATEGORY_ORDER } from "./classify";
 
@@ -12,6 +23,7 @@ function slugify(input: string): string {
     .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
     .replace(/&/g, " and ")
+    .replace(/\+/g, " plus ")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
@@ -53,6 +65,22 @@ function parsePrice(raw: string | null): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
+// Bulk-insert in chunks instead of one row at a time -- against a remote
+// database (Supabase, Neon, etc.) at ~100-150ms round-trip, a few thousand
+// individual awaited creates can take well over an hour; a few dozen
+// batched createMany calls take seconds. Safe here because the whole
+// catalog is wiped and rebuilt from scratch every run (see below), so
+// there's no existing-row merging to worry about.
+async function bulkInsert<T>(
+  model: { createMany: (args: { data: T[] }) => Prisma.PrismaPromise<unknown> },
+  rows: T[],
+  batchSize = 1000
+) {
+  for (let i = 0; i < rows.length; i += batchSize) {
+    await model.createMany({ data: rows.slice(i, i + batchSize) });
+  }
+}
+
 async function main() {
   const dataDir = path.join(__dirname, "..", "data");
   const tree: Tree = JSON.parse(fs.readFileSync(path.join(dataDir, "categories_tree.json"), "utf-8"));
@@ -80,40 +108,38 @@ async function main() {
     byModel.get(key)!.push(...p.products);
   }
 
-  let brandCount = 0, lineCount = 0, modelCount = 0, categoryCount = 0, itemCount = 0;
+  const brandRows: Prisma.BrandCreateManyInput[] = [];
+  const lineRows: Prisma.DeviceLineCreateManyInput[] = [];
+  const modelRows: Prisma.ModelCreateManyInput[] = [];
+  const categoryRows: Prisma.PartCategoryCreateManyInput[] = [];
+  const itemRows: Prisma.InventoryItemCreateManyInput[] = [];
+
+  console.log("Building catalog in memory (translating + classifying)...");
 
   for (const [brandName, lines] of Object.entries(tree)) {
-    const brand = await prisma.brand.upsert({
-      where: { slug: slugify(brandName) },
-      update: {},
-      create: { name: brandName, slug: slugify(brandName) },
-    });
-    brandCount++;
+    const brandId = randomUUID();
+    brandRows.push({ id: brandId, name: brandName, slug: slugify(brandName) });
 
     for (const [lineName, lineData] of Object.entries(lines)) {
       const translatedLineName = translateLineName(lineName);
-      const lineSlug = slugify(translatedLineName);
-      const deviceLine = await prisma.deviceLine.upsert({
-        where: { brandId_slug: { brandId: brand.id, slug: lineSlug } },
-        update: {},
-        create: { name: translatedLineName, slug: lineSlug, brandId: brand.id },
+      const lineId = randomUUID();
+      lineRows.push({
+        id: lineId,
+        name: translatedLineName,
+        slug: slugify(translatedLineName),
+        brandId,
       });
-      lineCount++;
 
       for (const model of lineData.models) {
         const translatedModelName = translateModelName(model.name);
-        const modelSlug = slugify(translatedModelName);
-        const modelRow = await prisma.model.upsert({
-          where: { deviceLineId_slug: { deviceLineId: deviceLine.id, slug: modelSlug } },
-          update: { sourceUrl: model.url },
-          create: {
-            name: translatedModelName,
-            slug: modelSlug,
-            sourceUrl: model.url,
-            deviceLineId: deviceLine.id,
-          },
+        const modelId = randomUUID();
+        modelRows.push({
+          id: modelId,
+          name: translatedModelName,
+          slug: slugify(translatedModelName),
+          sourceUrl: model.url,
+          deviceLineId: lineId,
         });
-        modelCount++;
 
         // Look up scraped products using the ORIGINAL (untranslated) key,
         // since that's how the scraper recorded brand/line/model.
@@ -133,45 +159,45 @@ async function main() {
         }
 
         for (const [categoryName, entries] of byCategory) {
-          const partCategory = await prisma.partCategory.upsert({
-            where: { modelId_name: { modelId: modelRow.id, name: categoryName } },
-            update: {},
-            create: {
-              name: categoryName,
-              order: CATEGORY_ORDER[categoryName] ?? 50,
-              modelId: modelRow.id,
-            },
+          const categoryId = randomUUID();
+          categoryRows.push({
+            id: categoryId,
+            name: categoryName,
+            order: CATEGORY_ORDER[categoryName] ?? 50,
+            modelId,
           });
-          categoryCount++;
 
           for (const { prod, translatedName } of entries) {
-            const existing = prod.id
-              ? await prisma.inventoryItem.findFirst({
-                  where: { partCategoryId: partCategory.id, sourceProductId: prod.id },
-                })
-              : null;
-            if (existing) continue;
-            await prisma.inventoryItem.create({
-              data: {
-                name: translatedName,
-                reference: prod.ref ?? null,
-                sourceProductId: prod.id ?? null,
-                sourceUrl: prod.url ?? null,
-                referencePriceEur: parsePrice(prod.price),
-                quantity: 0,
-                partCategoryId: partCategory.id,
-              },
+            itemRows.push({
+              id: randomUUID(),
+              name: translatedName,
+              reference: prod.ref ?? null,
+              sourceProductId: prod.id ?? null,
+              sourceUrl: prod.url ?? null,
+              referencePriceEur: parsePrice(prod.price),
+              quantity: 0,
+              partCategoryId: categoryId,
             });
-            itemCount++;
           }
         }
       }
-      console.log(`  seeded line "${translatedLineName}" (${lineData.models.length} models)`);
     }
   }
 
   console.log(
-    `\nDone. Brands: ${brandCount}, Lines: ${lineCount}, Models: ${modelCount}, Categories: ${categoryCount}, Items: ${itemCount}`
+    `Built ${brandRows.length} brands, ${lineRows.length} lines, ${modelRows.length} models, ` +
+      `${categoryRows.length} categories, ${itemRows.length} items. Inserting...`
+  );
+
+  await bulkInsert(prisma.brand, brandRows);
+  await bulkInsert(prisma.deviceLine, lineRows);
+  await bulkInsert(prisma.model, modelRows, 500);
+  await bulkInsert(prisma.partCategory, categoryRows, 1000);
+  await bulkInsert(prisma.inventoryItem, itemRows, 1000);
+
+  console.log(
+    `\nDone. Brands: ${brandRows.length}, Lines: ${lineRows.length}, Models: ${modelRows.length}, ` +
+      `Categories: ${categoryRows.length}, Items: ${itemRows.length}`
   );
 }
 
