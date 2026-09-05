@@ -34,6 +34,21 @@ var), enforced in `src/proxy.ts` (Next.js 16 renamed `middleware.ts` to
 there are no separate accounts. If `SITE_PASSWORD` is unset, the gate is
 skipped entirely (useful for local dev only — always set it in Vercel).
 
+**Optional second factor:** set `SITE_TOTP_SECRET` to also require a
+Google Authenticator (or any TOTP app) code before the password is
+accepted. Generate one with:
+
+```bash
+npx tsx scripts/generate-totp-secret.ts
+```
+
+It prints the secret to set as `SITE_TOTP_SECRET` (locally in `.env`, and
+in Vercel's environment variables) plus an `otpauth://` URI — paste that
+URI into any QR-code generator to scan it into Google Authenticator, or
+add it manually via "Enter a setup key" using the printed secret. Once
+`SITE_TOTP_SECRET` is set, the login page requires both the password and
+a valid 6-digit code; leave it unset to keep password-only login.
+
 ## Local setup
 
 1. **Install dependencies**
@@ -103,7 +118,9 @@ The GitHub repo is already set up: https://github.com/adnanestate/ifix-spare-par
      `unaccent` extension this app uses, same as Vercel Postgres/Neon — no
      code changes either way.
 3. Add a `SITE_PASSWORD` environment variable in the Vercel project settings
-   (Production, and Preview if you want previews gated too).
+   (Production, and Preview if you want previews gated too). Add
+   `SITE_TOTP_SECRET` too if you want the Google Authenticator second
+   factor — see "Access control" above.
 4. Deploy. On the first deploy, run the schema + seed once against the
    production database:
 
