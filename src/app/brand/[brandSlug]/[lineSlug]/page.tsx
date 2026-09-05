@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { compareModelsNewestFirst } from "@/lib/modelSort";
 
 export const dynamic = "force-dynamic";
 
@@ -26,6 +27,8 @@ export default async function LinePage({
   });
   if (!line) notFound();
 
+  const models = [...line.models].sort(compareModelsNewestFirst);
+
   return (
     <div>
       <Breadcrumbs
@@ -38,7 +41,7 @@ export default async function LinePage({
         {brand.name} {line.name}
       </h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {line.models.map((model) => (
+        {models.map((model) => (
           <Link
             key={model.id}
             href={`/brand/${brand.slug}/${line.slug}/${model.slug}`}
