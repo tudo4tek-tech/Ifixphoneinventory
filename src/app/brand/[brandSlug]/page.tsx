@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ManagedCardGrid from "@/components/ManagedCardGrid";
 
 export const dynamic = "force-dynamic";
 
@@ -24,24 +24,25 @@ export default async function BrandPage({
 
   if (!brand) notFound();
 
+  const items = brand.lines.map((line) => ({
+    id: line.id,
+    name: line.name,
+    slug: line.slug,
+    meta: `${line._count.models} model${line._count.models === 1 ? "" : "s"}`,
+  }));
+
   return (
     <div>
       <Breadcrumbs items={[{ label: brand.name }]} />
       <h1 className="text-2xl font-semibold mb-6">{brand.name}</h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {brand.lines.map((line) => (
-          <Link
-            key={line.id}
-            href={`/brand/${brand.slug}/${line.slug}`}
-            className="rounded-lg border border-black/10 dark:border-white/15 p-4 hover:border-blue-500 hover:shadow-sm transition flex flex-col gap-1"
-          >
-            <span className="font-medium">{line.name}</span>
-            <span className="text-sm text-black/50 dark:text-white/50">
-              {line._count.models} model{line._count.models === 1 ? "" : "s"}
-            </span>
-          </Link>
-        ))}
-      </div>
+      <ManagedCardGrid
+        items={items}
+        kind="line"
+        basePath={`/brand/${brand.slug}`}
+        parentId={brand.id}
+        emptyText="No device lines yet."
+        addPlaceholder="New device line name…"
+      />
     </div>
   );
 }

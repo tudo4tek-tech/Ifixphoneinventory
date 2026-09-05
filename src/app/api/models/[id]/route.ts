@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { slugify } from "@/lib/slug";
 
 export async function PATCH(
   req: NextRequest,
@@ -12,24 +13,25 @@ export async function PATCH(
     return NextResponse.json({ error: "name is required" }, { status: 400 });
   }
 
-  const category = await prisma.partCategory.findUnique({ where: { id } });
-  if (!category) {
-    return NextResponse.json({ error: "category not found" }, { status: 404 });
+  const model = await prisma.model.findUnique({ where: { id } });
+  if (!model) {
+    return NextResponse.json({ error: "model not found" }, { status: 404 });
   }
 
   const trimmed = name.trim();
-  if (trimmed !== category.name) {
-    const collision = await prisma.partCategory.findUnique({
-      where: { modelId_name: { modelId: category.modelId, name: trimmed } },
+  const slug = slugify(trimmed);
+  if (slug !== model.slug) {
+    const collision = await prisma.model.findUnique({
+      where: { deviceLineId_slug: { deviceLineId: model.deviceLineId, slug } },
     });
     if (collision) {
       return NextResponse.json({ error: `"${trimmed}" already exists` }, { status: 409 });
     }
   }
 
-  const updated = await prisma.partCategory.update({
+  const updated = await prisma.model.update({
     where: { id },
-    data: { name: trimmed },
+    data: { name: trimmed, slug },
   });
   return NextResponse.json(updated);
 }
@@ -40,10 +42,10 @@ export async function DELETE(
 ) {
   const { id } = await params;
   try {
-    // onDelete: Cascade on InventoryItem.partCategory removes its items too.
-    await prisma.partCategory.delete({ where: { id } });
+    // onDelete: Cascade removes its categories -> items too.
+    await prisma.model.delete({ where: { id } });
     return NextResponse.json({ ok: true });
   } catch {
-    return NextResponse.json({ error: "category not found" }, { status: 404 });
+    return NextResponse.json({ error: "model not found" }, { status: 404 });
   }
 }

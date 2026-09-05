@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { compareModelsNewestFirst } from "@/lib/modelSort";
+import ManagedCardGrid from "@/components/ManagedCardGrid";
 
 export const dynamic = "force-dynamic";
 
@@ -27,7 +26,12 @@ export default async function LinePage({
   });
   if (!line) notFound();
 
-  const models = [...line.models].sort(compareModelsNewestFirst);
+  const items = line.models.map((model) => ({
+    id: model.id,
+    name: model.name,
+    slug: model.slug,
+    meta: `${model._count.categories} categor${model._count.categories === 1 ? "y" : "ies"}`,
+  }));
 
   return (
     <div>
@@ -40,20 +44,14 @@ export default async function LinePage({
       <h1 className="text-2xl font-semibold mb-6">
         {brand.name} {line.name}
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {models.map((model) => (
-          <Link
-            key={model.id}
-            href={`/brand/${brand.slug}/${line.slug}/${model.slug}`}
-            className="rounded-lg border border-black/10 dark:border-white/15 p-4 hover:border-blue-500 hover:shadow-sm transition flex flex-col gap-1"
-          >
-            <span className="font-medium">{model.name}</span>
-            <span className="text-sm text-black/50 dark:text-white/50">
-              {model._count.categories} categor{model._count.categories === 1 ? "y" : "ies"}
-            </span>
-          </Link>
-        ))}
-      </div>
+      <ManagedCardGrid
+        items={items}
+        kind="model"
+        basePath={`/brand/${brand.slug}/${line.slug}`}
+        parentId={line.id}
+        emptyText="No models yet."
+        addPlaceholder="New model name…"
+      />
     </div>
   );
 }

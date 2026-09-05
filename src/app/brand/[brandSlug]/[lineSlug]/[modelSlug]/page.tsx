@@ -1,9 +1,28 @@
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import CategoryManager from "@/components/CategoryManager";
+import ManagedCardGrid from "@/components/ManagedCardGrid";
 
 export const dynamic = "force-dynamic";
+
+const STANDARD_CATEGORIES = [
+  "Screens",
+  "Batteries",
+  "Tampa",
+  "Chassis",
+  "Charging Board",
+  "Cameras",
+  "Speakers",
+  "Network Flex",
+  "Volume Flex",
+  "Power Flex",
+  "Main Flex",
+  "Adhesives",
+  "Buttons",
+  "Sim Tray",
+  "IC & Screws",
+  "Other",
+];
 
 export default async function ModelPage({
   params,
@@ -37,13 +56,16 @@ export default async function ModelPage({
   });
   if (!model) notFound();
 
-  const categories = model.categories.map((cat) => ({
-    id: cat.id,
-    name: cat.name,
-    itemCount: cat._count.items,
-    totalQty: cat.items.reduce((sum, it) => sum + it.quantity, 0),
-    lowCount: cat.items.filter((it) => it.quantity <= it.lowStockThreshold).length,
-  }));
+  const items = model.categories.map((cat) => {
+    const totalQty = cat.items.reduce((sum, it) => sum + it.quantity, 0);
+    const lowCount = cat.items.filter((it) => it.quantity <= it.lowStockThreshold).length;
+    return {
+      id: cat.id,
+      name: cat.name,
+      meta: `${cat._count.items} part${cat._count.items === 1 ? "" : "s"} · ${totalQty} in stock`,
+      warn: lowCount > 0 ? `${lowCount} low stock` : undefined,
+    };
+  });
 
   return (
     <div>
@@ -55,10 +77,14 @@ export default async function ModelPage({
         ]}
       />
       <h1 className="text-2xl font-semibold mb-6">{model.name}</h1>
-      <CategoryManager
-        modelId={model.id}
-        baseHref={`/brand/${brand.slug}/${line.slug}/${model.slug}`}
-        categories={categories}
+      <ManagedCardGrid
+        items={items}
+        kind="category"
+        basePath={`/brand/${brand.slug}/${line.slug}/${model.slug}`}
+        parentId={model.id}
+        suggestions={STANDARD_CATEGORIES}
+        emptyText="No part categories yet for this model."
+        addPlaceholder="Custom category name…"
       />
     </div>
   );
