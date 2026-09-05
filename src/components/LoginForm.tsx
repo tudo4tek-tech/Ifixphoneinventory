@@ -1,10 +1,17 @@
 "use client";
 
 import { useState, Suspense } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+
+// Only ever navigate to a same-site relative path -- "next" comes from a
+// query param, so this also guards against it being used to redirect
+// somewhere else entirely (e.g. "//evil.example.com").
+function safeNext(value: string | null): string {
+  if (!value || !value.startsWith("/") || value.startsWith("//")) return "/";
+  return value;
+}
 
 function LoginFormInner({ totpRequired }: { totpRequired: boolean }) {
-  const router = useRouter();
   const params = useSearchParams();
   const [password, setPassword] = useState("");
   const [code, setCode] = useState("");
@@ -22,13 +29,17 @@ function LoginFormInner({ totpRequired }: { totpRequired: boolean }) {
         body: JSON.stringify({ password, code }),
       });
       if (res.ok) {
-        router.push(params.get("next") || "/");
-        router.refresh();
+        // A hard navigation (not the client router) guarantees a fresh
+        // request that the proxy re-checks with the just-set cookie --
+        // no client-side route cache to end up "stuck" on the old state.
+        window.location.href = safeNext(params.get("next"));
       } else {
         const data = await res.json().catch(() => ({}));
         setError(data.error ?? "Incorrect password");
+        setLoading(false);
       }
-    } finally {
+    } catch {
+      setError("Something went wrong. Try again.");
       setLoading(false);
     }
   }
