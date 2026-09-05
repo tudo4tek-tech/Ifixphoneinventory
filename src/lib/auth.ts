@@ -11,7 +11,12 @@ async function sha256Hex(input: string): Promise<string> {
 export async function expectedAuthToken(): Promise<string | null> {
   const password = process.env.SITE_PASSWORD;
   if (!password) return null;
-  return sha256Hex(password);
+  // Folding the TOTP secret into the session token means any existing
+  // cookie stops matching the moment SITE_TOTP_SECRET is added, changed,
+  // or removed -- so already-logged-in browsers are forced back through
+  // /login (and its now-current requirements) instead of a stale
+  // password-only session silently continuing to work forever.
+  return sha256Hex(`${password}|${process.env.SITE_TOTP_SECRET ?? ""}`);
 }
 
 // Whether an authenticator (TOTP) code is required in addition to the
